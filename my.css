@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main {
+    background-color: #F3C6BD;
+    ;
+    width: 1400px;
+    height: 710px;
+}
+
+.menu {
+    background-color: white;
+    width: 1140px;
+    height: 62px;
+    margin: 39 130 609 130;
+}
+
+.text-menu {
+    width: 222px;
+    height: 51px;
+    position: absolute;
+    margin: 6 843 5 75;
+}
+
+.one {
+    position: absolute;
+    width: 273px;
+    height: 25px;
+    margin: 7 235 30 632;
+}
+
+.btmen {
+    width: 200px;
+    height: 48px;
+    margin-left: 900px;
+    margin-bottom: 14px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    transition: .3s linear;
+}
+
+.topmenu>li {
+    float: left;
+    position: relative;
+    border-left: 1px solid black;
+}
+
+.topmenu>li:first-child {
+    border-left: 0;
+}
+
+.topmenu {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FEFDFD;
+    letter-spacing: 2px;
+}
+
+.topmenu>li>a.active,
+.submenu a:hover {
+    color: black;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 2;
+    min-width: 200px;
+    background: white;
+    border-top: 1px solid #CBCBCC;
+    border-left: 1px solid #CBCBCC;
+    border-right: 1px solid #CBCBCC;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    left: 100%;
+    top: -1px;
+    transition: .3s linear;
+}
+
+nav li:hover>.submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-choose {
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: white;
+    height: 291px;
+    width: 550px;
+    margin: 60 90 2 -105;
+}
+
+ul>li {
+    margin: 12px;
+}
+
+.aqui {
+    color: black;
+    z-index: 3;
+}
+
+.aquam {
+    color: black;
+    z-index: 3;
+}
+
+.acquire {
+    background-color: green;
+    height: 50%;
+    width: 50%;
+}
+
+.engage {
+    background-color: aqua;
+    height: 50%;
+    width: 50%;
+}
+
+.book {
+    background-color: bisque;
+    height: 50%;
+    width: 50%;
+}
+
+.general {
+    background-color: indianred;
+    height: 50%;
+    width: 50%;
+}
+
+.active {
+    color: black;
+}
+
+.menu-tab {
+    color: black;
+}
+
+.picture {
+    height: 448px;
+    width: 796px;
+    margin: 185 25 75 650;
+    position: absolute;
+}
+
+.build {
+    margin: 177 520 368 126;
+    position: absolute;
+    height: 165px;
+    width: 754px;
+    font-size: 80;
+    font-weight: 700;
+}
+
+.creative {
+    height: 102px;
+    width: 456px;
+    position: absolute;
+    margin: 375 810 230 130;
+    font-size: 24;
+}
+
+.reserved {
+    height: 48px;
+    width: 328px;
+    position: absolute;
+    margin: 530 940 126 130;
+}
+
+.button {}
+
+.more {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 47.5%;
+    background-color: white;
+    color: blue;
+}
+
+.started {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 47.5%;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+}
