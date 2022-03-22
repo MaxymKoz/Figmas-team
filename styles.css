@@ -1,0 +1,157 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    box-sizing: border-box;
+    margin-top: 250px;
+}
+
+.cub1 {
+    display: flex;
+    flex-direction: column;
+    right: 20px;
+}
+
+.cub2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 165px;
+}
+
+.cub3 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.under-logo {
+    margin-left: 60px;
+    margin-top: -25px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.name-logo {
+    margin-left: 60px;
+    margin-top: -55px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+}
+
+.text-under-logo {
+    margin-top: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.name-product {
+    margin-left: 40px;
+    margin-top: 5px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+}
+
+.name-company {
+    margin-left: 40px;
+    margin-top: -15px;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2B292D;
+}
+
+.poloska {
+    width: 5000px;
+    height: 1px;
+    margin-top: 3055px;
+    display: flex;
+    background: #2B292D;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture {
+    margin-left: -5px;
+}
+
+.under-label1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 300px;
+    margin-left: 35px;
+    align-items: center;
+}
+
+.picture-app_store {
+    width: 135px;
+    height: 40px;
+}
+
+.picture-google_play {
+    width: 135px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    width: 5000px;
+    height: 1px;
+    margin-top: -45px;
+    background: #2B292D;
+}
+
+.under-label2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 950px;
+    align-items: center;
+}
+
+.picture-twitter {
+    margin-left: 20px;
+}
+
+.picture-facebook {
+    margin-left: 20px;
+}
+
+.picture-in_gr {
+    margin-left: 20px;
+}
