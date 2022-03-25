@@ -25,7 +25,7 @@
     margin-left: 130px;
 }
 
-.text {
+.chapter-link {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -37,7 +37,7 @@
     color: rgba(43, 41, 45, 0.6);
 }
 
-.under-logo {
+.company-name {
     margin-left: 60px;
     margin-top: -25px;
     font-family: 'Work Sans', sans-serif;
@@ -59,7 +59,7 @@
     color: #2B292D;
 }
 
-.text-under-logo {
+.company-description {
     margin-top: 20px;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -90,22 +90,12 @@
     line-height: 28px;
     color: #2B292D;
 }
-
-.poloska {
-    width: 5000px;
-    height: 1px;
-    margin-top: 3055px;
-    display: flex;
-    background: #2B292D;
-    align-items: center;
-    justify-content: center;
-}
-
-.picture {
+x
+.logo {
     margin-left: -5px;
 }
 
-.under-label1 {
+.under-label-left {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -137,7 +127,7 @@
     background: #2B292D;
 }
 
-.under-label2 {
+.under-label-right {
     display: flex;
     flex-direction: row;
     margin-left: 950px;
