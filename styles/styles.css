@@ -7,19 +7,19 @@
     margin-top: 250px;
 }
 
-.cub1 {
+.block-one {
     display: flex;
     flex-direction: column;
     right: 20px;
 }
 
-.cub2 {
+.block-two {
     display: flex;
     flex-direction: column;
     margin-left: 165px;
 }
 
-.cub3 {
+.block-three {
     display: flex;
     flex-direction: column;
     margin-left: 130px;
@@ -147,5 +147,5 @@ x
 }
 
 @media screen and (orientation: portrait) {
-    
+
 }
