@@ -145,3 +145,7 @@ x
 .picture-in_gr {
     margin-left: 20px;
 }
+
+@media screen and (orientation: portrait) {
+    
+}
