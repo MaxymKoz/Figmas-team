@@ -1,3 +1,89 @@
+/* здесь начинается Колина часть css */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Work Sans', 'sans-serif';
+}
+
+.hiring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    background-color: #fff   ;
+}
+
+.title_hiring {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    text-align: center;
+    color: #2B292D;
+    font-size: 40px;
+}
+
+.description_hiring {
+    margin: 18px auto 30px;
+    top: 113px;
+    width: 290px;
+    height: 136px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.more_about_company {
+    margin: 0px auto 39px;
+    padding: 0;
+    width: 290px;
+    height: 48px;
+    border-style: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.vacancies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 140px;
+    margin-bottom: 15px ;
+    border-radius: 8px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    cursor: pointer;
+}
+.vacancies_title {
+    max-width: 150px;
+    padding: 19px 71px 18px 20px; 
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+}
+.vacancies_location {
+    max-width: 180px;
+    font-weight: 400;
+    opacity: 0.6;
+    font-size: 16px;
+    margin: 0 50px 19px 20px;
+}
+.vacancies_action-button {
+    text-align: center;
+    line-height: 140px;
+    width: 50px;
+    height: 140px;
+    background: #D5D4D5;
+    border-radius: 0px 8px 8px 0px;
+}
+/* здесь заканчивается Колина часть css */
+
 .footer {
     display: flex;
     align-items: center;
@@ -149,3 +235,5 @@ x
 @media screen and (orientation: portrait) {
 
 }
+
+
