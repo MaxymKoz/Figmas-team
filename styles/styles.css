@@ -62,11 +62,12 @@ body {
     font-weight: 700;
     cursor: pointer;
 }
-.more_about_company:hover {
+
+.more-about-company:hover {
     background-color: #fff;
     color: #3040C4;
     border: 1px solid #3040C4;
-    
+
 }
 
 .vacancies {
@@ -247,7 +248,7 @@ body {
     color: #2B292D;
 }
 
-x .logo {
+.logo {
     margin-left: -5px;
 }
 
