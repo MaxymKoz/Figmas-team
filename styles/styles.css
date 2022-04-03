@@ -47,7 +47,7 @@ body {
     }
 }
 
-.more_about_company {
+.more-about-company {
     margin: 0px auto 39px;
     padding: 0;
     width: 290px;
@@ -67,7 +67,6 @@ body {
     background-color: #fff;
     color: #3040C4;
     border: 1px solid #3040C4;
-
 }
 
 .vacancies {
