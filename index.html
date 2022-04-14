@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.com/libraries/normalizenormalize.css"
-        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/hiring.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -24,23 +27,26 @@
         <div class="vacancies">
             <div class="vacancies_title">Front-End Developer</div>
             <div class="vacancies_location">Los Angeles / Remote</div>
-            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow" width="7px" height="12px"></div>
+            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow"
+                    width="7px" height="12px"></div>
         </div>
         <div class="vacancies">
             <div class="vacancies_title">Community manager</div>
             <div class="vacancies_location">New York / Full-Time</div>
-            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow" width="7px" height="12px"></div>
+            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow"
+                    width="7px" height="12px"></div>
         </div>
         <div class="vacancies">
             <div class="vacancies_title">Front-End Developer</div>
             <div class="vacancies_location">New York / Full-Time</div>
-            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow" width="7px" height="12px"></div>
+            <div class="vacancies_action-button"><img class="arrow" src="./images/arrow_action-button.svg" alt="arrow"
+                    width="7px" height="12px"></div>
         </div>
     </div>
     <!-- здесь заканчивается Колина часть html -->
-    
+
     <div class="footer">
-        <div class="block-one">
+        <div class="footer-column">
             <img class="logo" src="./images/picture-logo.png" width="60px" height="60px">
             <p class="name-logo">Foundation
                 <li class="company-name">Startup landing template</li>
@@ -49,12 +55,12 @@
                     no time.</li>
             <div class="buttons">
                 <a class="app-store" href="#"><img class="picture-app_store" src="./images/app-store.png"
-                     alt="button app-store"></a>
+                        alt="button app-store"></a>
                 <a class="google-play" href="#"><img class="picture-google_play" src="./images/google-play.png"
                         alt="button google-play"></a>
             </div>
         </div>
-        <div class="block-two">
+        <div class="footer-column-for-text">
             <span class="name-product">Product</span>
             <ul>
                 <a class="chapter-link" href="#">Acquire Users</a>
@@ -64,7 +70,7 @@
                 <a class="chapter-link" href="#">Virtual Inbox</a>
             </ul>
         </div>
-        <div class="block-three">
+        <div class="footer-column-for-text">
             <span class="name-company">Company</span>
             <ul>
                 <a class="chapter-link" href="#">About Foundation</a>
@@ -72,18 +78,23 @@
                 <a class="chapter-link" href="#">Press Kit</a>
                 <a class="chapter-link" href="#">Support</a>
             </ul>
-        </div>  
-    </div> 
-    <div class="under-label-left">
-        <a class="chapter-link" href="#">Terms</a>
-        <a class="chapter-link" href="#">Privacy</a>
-        <a class="chapter-link" href="#">License</a>
-        <div class="under-label-right">
-            <a class="twitter" href="#"><img class="picture-twitter" src="./images/twitter.png" alt="button twitter"></a>
-            <a class="facebook" href="#"><img class="picture-facebook" src="./images/facebook.png" alt="button facebook"></a>
-            <a class="in-gr" href="#"><img class="picture-in_gr" src="./images/in-gr.png" alt="button in-gr"></a>
         </div>
     </div>
     <div class="label"></div>
+    <div class="under-label">
+        <div class="under-label-left">
+            <a class="under-label-button-terms" href="#">Terms</a>
+            <a class="under-label-button-privacy" href="#">Privacy</a>
+            <a class="under-label-button-license" href="#">License</a>
+        </div>
+        <div class="under-label-right">
+            <a href="#"><img class="under-label-button-twitter" src="./images/twitter.png" alt="button twitter"></a>
+            <a href="#"><img class="under-label-button-facebook-and-linked" src="./images/facebook.png"
+                    alt="button facebook"></a>
+            <a href="#"><img class="under-label-button-facebook-and-linked" src="./images/in-gr.png"
+                    alt="button in-gr"></a>
+        </div>
+    </div>
 </body>
+
 </html>
