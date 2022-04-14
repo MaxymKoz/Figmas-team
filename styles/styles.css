@@ -1,151 +1,242 @@
+/* Задаемо стилі для мобільного  */
+
 .footer {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
     list-style: none;
     box-sizing: border-box;
-    margin-top: 250px;
-}
-
-.block-one {
-    display: flex;
-    flex-direction: column;
-    right: 20px;
-}
-
-.block-two {
-    display: flex;
-    flex-direction: column;
-    margin-left: 165px;
-}
-
-.block-three {
-    display: flex;
-    flex-direction: column;
-    margin-left: 130px;
-}
-
-.chapter-link {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(43, 41, 45, 0.6);
-}
-
-.company-name {
-    margin-left: 60px;
-    margin-top: -25px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(43, 41, 45, 0.6);
-}
-
-.name-logo {
-    margin-left: 60px;
-    margin-top: -55px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-}
-
-.company-description {
-    margin-top: 20px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    color: rgba(43, 41, 45, 0.6);
-}
-
-.name-product {
-    margin-left: 40px;
-    margin-top: 5px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-}
-
-.name-company {
-    margin-left: 40px;
-    margin-top: -15px;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 28px;
-    color: #2B292D;
-}
-x
-.logo {
-    margin-left: -5px;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 48px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .under-label-left {
+  margin-left: 1vh;
+}
+
+.footer-column-for-text {
+  margin: 2vh;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .under-label {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .under-label {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-top: 300px;
-    margin-left: 35px;
     align-items: center;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: auto;
+  }
 }
 
-.picture-app_store {
-    width: 135px;
-    height: 40px;
+.company-name {
+  font-family: "Work Sans", sans-serif;
+  margin-top: -20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
 }
 
-.picture-google_play {
-    width: 135px;
-    height: 40px;
-    margin-left: 20px;
+@media screen and (min-width: 600px) {
+  .company-name {
+    margin-left: 60px;
+    margin-top: -25px;
+  }
+}
+
+.name-logo {
+  margin-top: 0;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b292d;
+}
+
+@media screen and (min-width: 600px) {
+  .name-logo {
+    margin-left: 60px;
+    margin-top: -55px;
+  }
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vh;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5vh;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-column {
+    display: block;
+    border-bottom: none;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 600px) {
+  .logo {
+    margin-left: -5px;
+  }
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
+  margin-top: 5vh;
 }
 
-.label {
-    width: 5000px;
-    height: 1px;
-    margin-top: -45px;
-    background: #2B292D;
+@media screen and (min-width: 600px) {
+  .buttons {
+    margin-top: 30px;
+  }
 }
 
 .under-label-right {
-    display: flex;
-    flex-direction: row;
-    margin-left: 950px;
-    align-items: center;
+  margin-top: 1vh;
 }
 
-.picture-twitter {
-    margin-left: 20px;
+@media screen and (min-width: 600px) {
+  .under-label-right {
+    margin: 0;
+  }
 }
 
-.picture-facebook {
-    margin-left: 20px;
+/* Переопредиляем стили для Desktop */
+
+.company-description {
+  margin-top: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
 }
 
-.picture-in_gr {
-    margin-left: 20px;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .company-description {
+    display: none;
+  }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (min-width: 600px) {
+  .label {
+    height: 1px;
+    opacity: 10%;
+    background: #2b292d;
+    max-width: 1400px;
+    margin: auto;
+  }
+}
 
+.chapter-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.name-product {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b292d;
+}
+
+.under-label-button-privacy {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 10px;
+}
+
+.under-label-button-license {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 10px;
+}
+
+.under-label-button-terms {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.name-company {
+  margin-left: 40px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2b292d;
+}
+
+.under-label {
+  margin-top: 10px;
+  margin-left: 4vh;
+}
+
+.under-label-button-twitter {
+  width: 21px;
+  height: 16px;
+  margin-left: 10px;
+  opacity: 60%;
+}
+
+.under-label-button-facebook-and-linked {
+  width: 18px;
+  height: 17px;
+  margin-left: 10px;
+  opacity: 60%;
 }
