@@ -6,8 +6,6 @@
 
 @media screen and (min-width: 600px) {
   .footer {
-    display: flex;
-    list-style: none;
     box-sizing: border-box;
     align-items: center;
     max-width: 1400px;
@@ -19,11 +17,11 @@
 }
 
 .under-label-left {
-  margin-left: 1vh;
+  margin-left: 10px;
 }
 
 .footer-column-for-text {
-  margin: 2vh;
+  margin: 20px;
   margin-left: 0;
 }
 
