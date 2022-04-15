@@ -1,521 +1,529 @@
-                        * {
-                            display: flex;
-                            box-sizing: border-box;
-                        }
-                        
-                        body {
-                            align-items: center;
-                            justify-content: center;
-                            width: 100vw;
-                            height: 130vh;
-                            background-color: pink;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            * {
+                                display: flex;
+                                box-sizing: border-box;
+                            }
+                            
                             body {
-                                width: 210%;
-                                height: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100vw;
+                                height: 130vh;
+                                background-color: pink;
                             }
-                        }
-                        
-                        .menu_picture {
-                            height: 60px;
-                            width: 60px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                body {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            
                             .menu_picture {
-                                height: 64px;
-                                width: 64px;
+                                height: 60px;
+                                width: 60px;
                             }
-                        }
-                        
-                        .menu {
-                            width: 1400px;
-                            height: 920px;
-                            margin-left: 12%;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .menu_picture {
+                                    height: 64px;
+                                    width: 64px;
+                                }
+                            }
+                            
                             .menu {
-                                width: 105vh;
-                                height: 100%;
-                                margin-left: 1%;
+                                width: 1400px;
+                                height: 920px;
+                                margin-left: 12%;
                             }
-                        }
-                        
-                        .nav_menu {
-                            width: 100%;
-                            height: 9.5vh;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .menu {
+                                    width: 100%;
+                                    height: 100%;
+                                    margin-left: 1%;
+                                }
+                            }
+                            
                             .nav_menu {
-                                background-color: white;
                                 width: 100%;
-                                height: 64px;
+                                height: 9.5vh;
                             }
-                        }
-                        
-                        .startup {
-                            width: 40vh;
-                            margin-left: 8vh;
-                            position: absolute;
-                            height: 64px;
-                            flex-direction: column;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .nav_menu {
+                                    background-color: white;
+                                    width: 100%;
+                                    height: 64px;
+                                }
+                            }
+                            
                             .startup {
-                                margin-left: 10vh;
+                                width: 40vh;
+                                margin-left: 8vh;
+                                position: absolute;
+                                height: 64px;
+                                flex-direction: column;
                             }
-                        }
-                        
-                        .text-menu {
-                            font-family: "Work Sans";
-                            font-size: 18px;
-                            font-weight: 700;
-                            width: 222px;
-                            height: 51px;
-                            position: absolute;
-                            order: 1;
-                            align-items: center;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .startup {
+                                    margin-left: 10vh;
+                                }
+                            }
+                            
                             .text-menu {
-                                font-family: Work Sans;
-                                font-size: 20px;
+                                font-family: "Work Sans";
+                                font-size: 18px;
                                 font-weight: 700;
-                                line-height: 25px;
+                                width: 222px;
+                                height: 51px;
+                                position: absolute;
+                                order: 1;
                                 align-items: center;
                             }
-                        }
-                        
-                        .text-menu2 {
-                            font-family: "Work Sans";
-                            font-size: 18px;
-                            font-weight: 400;
-                            height: 51px;
-                            position: absolute;
-                            align-items: flex-end;
-                            order: 2;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .text-menu {
+                                    font-family: Work Sans;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 25px;
+                                    align-items: center;
+                                }
+                            }
+                            
                             .text-menu2 {
-                                visibility: hidden;
+                                font-family: "Work Sans";
+                                font-size: 18px;
+                                font-weight: 400;
+                                height: 51px;
+                                position: absolute;
+                                align-items: flex-end;
+                                order: 2;
                             }
-                        }
-                        
-                        .one {
-                            position: absolute;
-                            width: 2.8vh;
-                            height: 7.56vh;
-                            margin-left: 47%;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .text-menu2 {
+                                    visibility: hidden;
+                                }
+                            }
+                            
                             .one {
-                                width: 2.6vh;
-                                height: 3.2vh;
-                                margin-left: 43vh;
+                                position: absolute;
+                                width: 2.8vh;
+                                height: 7.56vh;
+                                margin-left: 47%;
                             }
-                        }
-                        
-                        .main_on_header {
-                            width: 155vh;
-                            height: 45vh;
-                            margin-top: 13vh;
-                            position: absolute;
-                            align-self: flex-start;
-                            justify-self: flex-start;
-                            flex-direction: column;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .one {
+                                    width: 2.6vh;
+                                    height: 3.2vh;
+                                    margin-left: 43vh;
+                                }
+                            }
+                            
                             .main_on_header {
-                                width: 100%;
-                                height: 20%;
-                                margin-top: 28vh;
+                                width: 155vh;
+                                height: 45vh;
+                                margin-top: 13vh;
+                                position: absolute;
+                                align-self: flex-start;
+                                justify-self: flex-start;
+                                flex-direction: column;
                             }
-                        }
-                        
-                        .btmen {
-                            width: 20vh;
-                            height: 5.6vh;
-                            margin-left: 127vh;
-                            text-align: center;
-                            align-items: center;
-                            background-color: blue;
-                            color: white;
-                            font-family: "Work Sans";
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 18px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .main_on_header {
+                                    width: 100%;
+                                    height: 20%;
+                                    margin-top: 28vh;
+                                }
+                            }
+                            
                             .btmen {
-                                visibility: hidden;
-                                margin: 0px;
+                                width: 20vh;
+                                height: 5.6vh;
+                                margin-left: 127vh;
+                                text-align: center;
+                                align-items: center;
+                                background-color: blue;
+                                color: white;
+                                font-family: "Work Sans";
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 18px;
                             }
-                        }
-                        
-                        nav ul {
-                            margin: 0;
-                            padding: 0;
-                            list-style: none;
-                        }
-                        
-                        nav ul:after {
-                            content: "";
-                            display: block;
-                            clear: both;
-                        }
-                        
-                        nav a {
-                            text-decoration: none;
-                            display: block;
-                            transition: .3s linear;
-                        }
-                        
-                        .topmenu>li {
-                            float: left;
-                            position: relative;
-                            border-left: 1px;
-                        }
-                        
-                        .topmenu>li:first-child {
-                            border-left: 0;
-                        }
-                        
-                        .topmenu {
-                            font-family: "Work Sans";
-                            font-size: 18px;
-                            font-size: 12px;
-                            color: #FEFDFD;
-                            letter-spacing: 2px;
-                        }
-                        
-                        .topmenu>li>a.active,
-                        .submenu a:hover {
-                            color: black;
-                        }
-                        
-                        .submenu {
-                            position: absolute;
-                            z-index: 2;
-                            min-width: 200px;
-                            background: white;
-                            border-top: 1px solid #CBCBCC;
-                            border-left: 1px solid #CBCBCC;
-                            border-right: 1px solid #CBCBCC;
-                            opacity: 0;
-                            transform-origin: 0% 0%;
-                            transform: rotateX(-90deg);
-                            transition: .3s linear;
-                            left: 100%;
-                            top: -1px;
-                            transition: .3s linear;
-                        }
-                        
-                        nav li:hover>.submenu {
-                            transform: rotateX(0deg);
-                            visibility: visible;
-                            opacity: 1;
-                        }
-                        
-                        .menu-choose {
-                            flex-wrap: wrap;
-                            position: absolute;
-                            background-color: white;
-                            height: 291px;
-                            width: 550px;
-                            margin: 60px 90px 2px -105px;
-                            border-radius: 8px;
-                        }
-                        
-                        .menu-choose>div {
-                            border-radius: 8px;
-                        }
-                        
-                        ul>li {
-                            margin: 12px;
-                        }
-                        
-                        .engage-customer {
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            line-height: 26px;
-                            font-weight: 700;
-                        }
-                        
-                        .book-appointеments {
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            line-height: 26px;
-                            font-weight: 700;
-                        }
-                        
-                        .generate-leads {
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            line-height: 26px;
-                            font-weight: 700;
-                        }
-                        
-                        .general {
-                            flex-direction: column;
-                            background-color: white;
-                            color: black;
-                            z-index: 3;
-                            height: 50%;
-                            width: 50%;
-                        }
-                        
-                        .offering,
-                        .engage-start,
-                        .aquam,
-                        .become-designer {
-                            font-family: "Work Sans";
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 26px;
-                            color: black;
-                            z-index: 3;
-                        }
-                        
-                        .engage-customer:active,
-                        .aquire-users:active,
-                        .book-appointеments:active,
-                        .generate-leads:active {
-                            color: green;
-                        }
-                        
-                        .acquire {
-                            flex-direction: column;
-                            background-color: white;
-                            color: black;
-                            z-index: 3;
-                            height: 50%;
-                            width: 50%;
-                        }
-                        
-                        .aquire-users {
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            line-height: 26px;
-                            font-weight: 700;
-                        }
-                        
-                        .engage {
-                            flex-direction: column;
-                            background-color: white;
-                            color: black;
-                            z-index: 3;
-                            height: 50%;
-                            width: 50%;
-                        }
-                        
-                        .book {
-                            flex-direction: column;
-                            background-color: white;
-                            color: black;
-                            z-index: 3;
-                            height: 50%;
-                            width: 50%;
-                        }
-                        
-                        .active {
-                            font-family: "Work Sans";
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 25px;
-                        }
-                        
-                        .menu-tab {
-                            color: black;
-                            font-family: "Work Sans";
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 25px;
-                        }
-                        
-                        .menucure {
-                            color: black;
-                            font-family: "Work Sans";
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 25px;
-                        }
-                        
-                        .picture {
-                            height: 448px;
-                            width: 700px;
-                            position: absolute;
-                            align-self: flex-end;
-                            justify-self: flex-end;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .btmen {
+                                    visibility: hidden;
+                                    margin: 0px;
+                                }
+                            }
+                            
+                            nav ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                            }
+                            
+                            nav ul:after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+                            
+                            nav a {
+                                text-decoration: none;
+                                display: block;
+                                transition: .3s linear;
+                            }
+                            
+                            .topmenu>li {
+                                float: left;
+                                position: relative;
+                                border-left: 1px;
+                            }
+                            
+                            .topmenu>li:first-child {
+                                border-left: 0;
+                            }
+                            
+                            .topmenu {
+                                font-family: "Work Sans";
+                                font-size: 18px;
+                                font-size: 12px;
+                                color: #FEFDFD;
+                                letter-spacing: 2px;
+                            }
+                            
+                            .topmenu>li>a.active,
+                            .submenu a:hover {
+                                color: black;
+                            }
+                            
+                            .submenu {
+                                position: absolute;
+                                z-index: 2;
+                                min-width: 200px;
+                                background: white;
+                                border-top: 1px solid #CBCBCC;
+                                border-left: 1px solid #CBCBCC;
+                                border-right: 1px solid #CBCBCC;
+                                opacity: 0;
+                                transform-origin: 0% 0%;
+                                transform: rotateX(-90deg);
+                                transition: .3s linear;
+                                left: 100%;
+                                top: -1px;
+                                transition: .3s linear;
+                            }
+                            
+                            nav li:hover>.submenu {
+                                transform: rotateX(0deg);
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                            
+                            .menu-choose {
+                                flex-wrap: wrap;
+                                position: absolute;
+                                background-color: white;
+                                height: 291px;
+                                width: 550px;
+                                margin: 60px 90px 2px -105px;
+                                border-radius: 8px;
+                            }
+                            
+                            .menu-choose>div {
+                                border-radius: 8px;
+                            }
+                            
+                            ul>li {
+                                margin: 12px;
+                            }
+                            
+                            .engage-customer {
+                                font-family: "Work Sans";
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                            }
+                            
+                            .book-appointеments {
+                                font-family: "Work Sans";
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                            }
+                            
+                            .generate-leads {
+                                font-family: "Work Sans";
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                            }
+                            
+                            .general {
+                                flex-direction: column;
+                                background-color: white;
+                                color: black;
+                                z-index: 3;
+                                height: 50%;
+                                width: 50%;
+                            }
+                            
+                            .offering,
+                            .engage-start,
+                            .aquam,
+                            .become-designer {
+                                font-family: "Work Sans";
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 26px;
+                                color: black;
+                                z-index: 3;
+                            }
+                            
+                            .engage-customer:active,
+                            .aquire-users:active,
+                            .book-appointеments:active,
+                            .generate-leads:active {
+                                color: green;
+                            }
+                            
+                            .acquire {
+                                flex-direction: column;
+                                background-color: white;
+                                color: black;
+                                z-index: 3;
+                                height: 50%;
+                                width: 50%;
+                            }
+                            
+                            .aquire-users {
+                                font-family: "Work Sans";
+                                font-size: 22px;
+                                line-height: 26px;
+                                font-weight: 700;
+                            }
+                            
+                            .engage {
+                                flex-direction: column;
+                                background-color: white;
+                                color: black;
+                                z-index: 3;
+                                height: 50%;
+                                width: 50%;
+                            }
+                            
+                            .book {
+                                flex-direction: column;
+                                background-color: white;
+                                color: black;
+                                z-index: 3;
+                                height: 50%;
+                                width: 50%;
+                            }
+                            
+                            .active {
+                                font-family: "Work Sans";
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+                            
+                            .menu-tab {
+                                color: black;
+                                font-family: "Work Sans";
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+                            
+                            .menucure {
+                                color: black;
+                                font-family: "Work Sans";
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+                            
                             .picture {
-                                width: 175%;
-                                height: 265%;
-                                margin-top: 105%;
-                                margin-right: -85%;
+                                position: absolute;
+                                height: 448px;
+                                width: 700px;
+                                margin-top: -25%;
+                                margin-left: 37%;
+                                align-self: flex-end;
+                                justify-self: flex-end;
                             }
-                        }
-                        
-                        .build {
-                            position: absolute;
-                            height: 379px;
-                            width: 469px;
-                            font-family: "Work Sans";
-                            font-weight: bold;
-                            font-size: 63px;
-                            line-height: 78px;
-                            letter-spacing: -0.5px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .picture {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 30%;
+                                    margin-top: 195%;
+                                    margin-right: -85%;
+                                }
+                            }
+                            
                             .build {
-                                height: 49vh;
-                                width: 101vh;
-                                margin-top: -15vh;
-                                margin-left: 15vh;
-                                justify-content: center;
+                                position: absolute;
+                                height: 379px;
+                                width: 469px;
+                                font-family: "Work Sans";
+                                font-weight: bold;
+                                font-size: 63px;
+                                line-height: 78px;
+                                letter-spacing: -0.5px;
                             }
-                        }
-                        
-                        .creative {
-                            height: 102px;
-                            width: 456px;
-                            position: absolute;
-                            margin: 375px 810px 230px 0px;
-                            font-family: "Work Sans";
-                            font-weight: 400;
-                            font-size: 24px;
-                            line-height: 34px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .build {
+                                    height: 49vh;
+                                    width: 100%;
+                                    margin-top: -15vh;
+                                    margin-left: 15vh;
+                                    justify-content: center;
+                                }
+                            }
+                            
                             .creative {
-                                margin-top: 45%;
-                                margin-left: 15vh;
+                                height: 102px;
+                                width: 456px;
+                                position: absolute;
+                                margin: 375px 810px 230px 0px;
+                                font-family: "Work Sans";
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 34px;
                             }
-                        }
-                        
-                        .reserved {
-                            height: 48px;
-                            width: 328px;
-                            position: absolute;
-                            margin: 530px 940px 126px 0px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .creative {
+                                    margin-top: 57%;
+                                    margin-left: 15vh;
+                                }
+                            }
+                            
                             .reserved {
-                                width: 240vh;
-                                height: 15vh;
-                                margin-top: 43vh;
-                                flex-direction: column;
+                                height: 48px;
+                                width: 328px;
+                                position: absolute;
+                                margin: 600px 940px 126px 0px;
                             }
-                        }
-                        
-                        .more {
-                            align-items: center;
-                            text-align: center;
-                            justify-content: center;
-                            width: 47.5%;
-                            background-color: white;
-                            color: blue;
-                            font-family: "Work Sans";
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 13px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .reserved {
+                                    flex-direction: column;
+                                    width: 100%;
+                                    height: 15vh;
+                                    margin-top: 100vh;
+                                    margin-left: 30%;
+                                }
+                            }
+                            
                             .more {
-                                height: 15vh;
+                                align-items: center;
+                                text-align: center;
+                                justify-content: center;
+                                width: 47.5%;
+                                background-color: white;
+                                color: blue;
+                                font-family: "Work Sans";
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 13px;
                             }
-                        }
-                        
-                        .started {
-                            align-items: center;
-                            text-align: center;
-                            justify-content: center;
-                            width: 47.5%;
-                            background-color: blue;
-                            color: white;
-                            margin-right: 10px;
-                            font-family: "Work Sans";
-                            font-weight: 700;
-                            font-size: 18px;
-                            line-height: 13px;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .more {
+                                    height: 15vh;
+                                    width: 100%;
+                                }
+                            }
+                            
                             .started {
-                                height: 15vh;
+                                align-items: center;
+                                text-align: center;
+                                justify-content: center;
+                                width: 47.5%;
+                                background-color: blue;
+                                color: white;
+                                margin-right: 10px;
+                                font-family: "Work Sans";
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 13px;
                             }
-                        }
-                        
-                        .down_foot {
-                            position: absolute;
-                            height: 28%;
-                            width: 77%;
-                            background: #F4F5F7;
-                            margin-top: 46%;
-                        }
-                        
-                        @media screen and (max-width:600px) {
-                            .dow n_foot {
-                                width: 190%;
-                                height: 65%;
-                                flex-direction: column;
-                                margin-top: 252%;
+                            
+                            @media screen and (max-width:600px) {
+                                .started {
+                                    width: 100%;
+                                    height: 15vh;
+                                }
                             }
-                        }
-                        
-                        .what_is _it {
-                            width: 50%;
-                            height: 100%;
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            font-weight: 400;
-                            line-height: 32px;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        @media screen and (max-width:600px) {
-                            .wha t_is_it {
-                                font-family: Work Sans;
+                            
+                            .down_foot {
+                                position: absolute;
+                                height: 28%;
+                                width: 77%;
+                                background: #F4F5F7;
+                                margin-top: 46%;
+                            }
+                            
+                            @media screen and (max-width:600px) {
+                                .down_foot {
+                                    width: 100%;
+                                    height: 45%;
+                                    flex-direction: column;
+                                    margin-top: 255%;
+                                    margin-left: 30%;
+                                }
+                            }
+                            
+                            .what_is _it {
+                                width: 50%;
+                                height: 100%;
+                                font-family: "Work Sans";
                                 font-size: 22px;
                                 font-weight: 400;
                                 line-height: 32px;
-                                width: 100%;
-                                height: 50%;
+                                justify-content: center;
+                                align-items: center;
                             }
-                        }
-                        
-                        .sp_who {
-                            font-family: "Work Sans";
-                            font-size: 22px;
-                            font-weight: 700;
-                            line-height: 32px;
-                            margin-top: 50px;
-                            position: absolute;
-                            align-self: flex-start;
-                            justify-self: center;
-                        }
-                        
-                        @media screen and (max-width:600px) {
+                            
+                            @media screen and (max-width:600px) {
+                                .what_is_it {
+                                    font-family: Work Sans;
+                                    font-size: 22px;
+                                    font-weight: 400;
+                                    line-height: 32px;
+                                    width: 100%;
+                                    height: 50%;
+                                }
+                            }
+                            
                             .sp_who {
-                                font-family: Work Sans;
+                                font-family: "Work Sans";
                                 font-size: 22px;
                                 font-weight: 700;
                                 line-height: 32px;
+                                margin-top: 50px;
+                                position: absolute;
+                                align-self: flex-start;
+                                justify-self: center;
                             }
-                        }
+                            
+                            @media screen and (max-width:600px) {
+                                .sp_who {
+                                    margin-top: 6px;
+                                    font-family: Work Sans;
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    line-height: 32px;
+                                }
+                            }
