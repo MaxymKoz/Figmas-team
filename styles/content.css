@@ -4,12 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Work Sans';
 }
 
 .header-first {
     display: flex;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
@@ -30,8 +29,6 @@
 
 .header-second {
     display: flex;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
@@ -56,12 +53,9 @@
 
 .description_content {
     display: flex;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
-    text-align: center;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -96,12 +90,16 @@
     height: 48px;
     box-shadow: 0px 1px 5px -3px #000000;
     background-color: #3040C4;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 13px;
     color: black;
+}
+
+.page-buttons:hover {
+    cursor: pointer;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+        0px 11px 55px rgba(0, 0, 0, 0.07);
 }
 
 @media (min-width: 600px) {
@@ -125,7 +123,7 @@
 .white {
     margin-top: 17px;
     margin-bottom: 40px;
-    background-color: white;
+    background-color: #fff;
 }
 
 @media (min-width: 600px) {
@@ -141,8 +139,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Work Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
@@ -164,7 +160,7 @@
     width: 290px;
     height: 300px;
     margin: 15px;
-    background-color: white;
+    background-color: #fff;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -181,13 +177,15 @@
 
 .pictures:hover {
     background: #3141C5;
-    color: white;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+        0px 11px 55px rgba(0, 0, 0, 0.07);
 }
 
 .pic {
     margin: 22px;
     width: 138px;
     height: 195px;
-    padding-top: 22px;
 }
 
