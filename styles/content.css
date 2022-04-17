@@ -157,6 +157,8 @@
 
 
 .pictures {
+    display: flex;
+    flex-direction: column;
     width: 290px;
     height: 300px;
     margin: 15px;
