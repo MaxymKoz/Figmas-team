@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  max-width: 360px;
   border-bottom: 1px solid gray;
   padding-bottom: 5vh;
 }
@@ -85,6 +85,10 @@
   }
 }
 
+.list-for-company-description {
+  list-style: none;
+}
+
 @media screen and (min-width: 600px) {
   .logo {
     display: flex;
@@ -92,12 +96,16 @@
 }
 
 .buttons {
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {
   .buttons {
     margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
