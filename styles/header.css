@@ -2,21 +2,26 @@
                                 display: flex;
                                 box-sizing: border-box;
                             }
+                            body{flex-direction: column;}
                             
-                            body {
-                                align-items: center;
+                            .max_code {
+                                
                                 justify-content: center;
-                                width: 100vw;
-                                height: 130vh;
+                                width: 1400px;
+                                height: 29%;
                                 background-color: pink;
                             }
                             
                             @media screen and (max-width:600px) {
-                                body {
+                                .max_code {
                                     width: 100%;
-                                    height: 100%;
+                                    height:1280px
+
+                                    
                                 }
+                                
                             }
+                          
                             
                             .menu_picture {
                                 height: 60px;
@@ -33,14 +38,14 @@
                             .menu {
                                 width: 1400px;
                                 height: 920px;
-                                margin-left: 12%;
+                                margin-left: 7%;
                             }
                             
                             @media screen and (max-width:600px) {
                                 .menu {
                                     width: 100%;
                                     height: 100%;
-                                    margin-left: 1%;
+                                    margin-left: 0%;
                                 }
                             }
                             
@@ -58,8 +63,8 @@
                             }
                             
                             .startup {
-                                width: 40vh;
-                                margin-left: 8vh;
+                                width: 30vh;
+                                margin-left: 11.2vh;
                                 position: absolute;
                                 height: 64px;
                                 flex-direction: column;
@@ -76,7 +81,7 @@
                                 font-size: 18px;
                                 font-weight: 700;
                                 width: 222px;
-                                height: 51px;
+                                height: 32px;
                                 position: absolute;
                                 order: 1;
                                 align-items: center;
@@ -96,7 +101,7 @@
                                 font-family: "Work Sans";
                                 font-size: 18px;
                                 font-weight: 400;
-                                height: 51px;
+                                height: 65px;
                                 position: absolute;
                                 align-items: flex-end;
                                 order: 2;
@@ -112,21 +117,21 @@
                                 position: absolute;
                                 width: 2.8vh;
                                 height: 7.56vh;
-                                margin-left: 47%;
+                                margin-left: 37%;
                             }
                             
                             @media screen and (max-width:600px) {
                                 .one {
                                     width: 2.6vh;
                                     height: 3.2vh;
-                                    margin-left: 43vh;
+                                    margin-left: 60%;
                                 }
                             }
                             
                             .main_on_header {
-                                width: 155vh;
-                                height: 45vh;
-                                margin-top: 13vh;
+                                width: 40vh;
+                                height: 3vh;
+                                margin-top: 10vh;
                                 position: absolute;
                                 align-self: flex-start;
                                 justify-self: flex-start;
@@ -142,9 +147,9 @@
                             }
                             
                             .btmen {
-                                width: 20vh;
-                                height: 5.6vh;
-                                margin-left: 127vh;
+                                width: 8%;
+                                height: 72%;
+                                margin-left: 76%;
                                 text-align: center;
                                 align-items: center;
                                 background-color: blue;
@@ -234,6 +239,14 @@
                                 width: 550px;
                                 margin: 60px 90px 2px -105px;
                                 border-radius: 8px;
+                            }
+                            @media  screen and (max-width:600px) {
+                                .menu-choose{
+                                    width: 400px;
+                                    height: 336px;
+                                    margin-left: -212px; ;
+                                }
+                                
                             }
                             
                             .menu-choose>div {
@@ -353,20 +366,19 @@
                             .picture {
                                 position: absolute;
                                 height: 448px;
-                                width: 700px;
-                                margin-top: -25%;
-                                margin-left: 37%;
-                                align-self: flex-end;
-                                justify-self: flex-end;
+                                width: 645px;
+                                margin-top: 4%;
+                                margin-left: 30%;
+                               
                             }
                             
                             @media screen and (max-width:600px) {
                                 .picture {
                                     position: absolute;
                                     width: 100%;
-                                    height: 30%;
-                                    margin-top: 195%;
-                                    margin-right: -85%;
+                                    height: 25%;
+                                    margin-top: 100%;
+                                    margin-left: 22%;
                                 }
                             }
                             
@@ -385,9 +397,10 @@
                                 .build {
                                     height: 49vh;
                                     width: 100%;
-                                    margin-top: -15vh;
-                                    margin-left: 15vh;
+                                    margin-top: -47%;
+                                    margin-left: 30%;
                                     justify-content: center;
+                                    font-size: 50px;
                                 }
                             }
                             
@@ -395,7 +408,7 @@
                                 height: 102px;
                                 width: 456px;
                                 position: absolute;
-                                margin: 375px 810px 230px 0px;
+                                margin: 302px 802px 230px 0px;
                                 font-family: "Work Sans";
                                 font-weight: 400;
                                 font-size: 24px;
@@ -404,8 +417,8 @@
                             
                             @media screen and (max-width:600px) {
                                 .creative {
-                                    margin-top: 57%;
-                                    margin-left: 15vh;
+                                    margin-top: 13%;
+                                    margin-left: 10vh;
                                 }
                             }
                             
@@ -420,9 +433,9 @@
                                 .reserved {
                                     flex-direction: column;
                                     width: 100%;
-                                    height: 15vh;
-                                    margin-top: 100vh;
-                                    margin-left: 30%;
+                                    height: 19vh;
+                                    margin-top: 162%;
+                                    margin-left: 22%;
                                 }
                             }
                             
@@ -443,6 +456,7 @@
                                 .more {
                                     height: 15vh;
                                     width: 100%;
+                                    margin-top: 5%;
                                 }
                             }
                             
@@ -469,19 +483,19 @@
                             
                             .down_foot {
                                 position: absolute;
-                                height: 28%;
-                                width: 77%;
+                                height: 22%;
+                                width: 65%;
                                 background: #F4F5F7;
-                                margin-top: 46%;
+                                margin-top: 42.2%;
                             }
                             
                             @media screen and (max-width:600px) {
                                 .down_foot {
                                     width: 100%;
-                                    height: 45%;
+                                    height: 37%;
                                     flex-direction: column;
-                                    margin-top: 255%;
-                                    margin-left: 30%;
+                                    margin-top: 218%;
+                                    margin-left: 23%;
                                 }
                             }
                             
@@ -504,6 +518,7 @@
                                     line-height: 32px;
                                     width: 100%;
                                     height: 50%;
+                                    justify-content: center;
                                 }
                             }
                             
@@ -525,5 +540,6 @@
                                     font-size: 22px;
                                     font-weight: 700;
                                     line-height: 32px;
+                                    
                                 }
                             }

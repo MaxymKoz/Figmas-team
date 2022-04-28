@@ -1,103 +1,310 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/hiring.css" />
+    <link rel="stylesheet" href="./styles/content.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="my.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel=" preconnect " href="https://fonts.googleapis.com ">
-    <link rel="preconnect " href="https://fonts.gstatic.com " crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Space+Mono&display=swap " rel="stylesheet ">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <div class="menu">
+  <body>
+    <div class="max_code">
+      <div class="menu">
         <div class="nav_menu">
-            <img class="menu_picture" src="./Menu.png">
-            <div class="startup">
-                <li class="text-menu">Foundation</li>
-                <li class="text-menu2">Startup landing template</li>
-            </div>
-            <nav class="one">
-                <ul class="topmenu">
-                    <li><a href="" class="active">Library<span class="fa fa-angle-down"></span></a>
-                        <ul class="submenu">
-                            <div class="menu-choose">
+          <img class="menu_picture" src="./images/Menu.png" />
+          <div class="startup">
+            <li class="text-menu">Foundation</li>
+            <li class="text-menu2">Startup landing template</li>
+          </div>
+          <nav class="one">
+            <ul class="topmenu">
+              <li>
+                <a href="" class="active"
+                  >Library<span class="fa fa-angle-down"></span
+                ></a>
+                <ul class="submenu">
+                  <div class="menu-choose">
+                    <div class="acquire">
+                      <span
+                        class="aquire-users"
+                        href="https://www.youtube.com/watch?v=s6my0RUoX4c"
+                        >Acquire Users
+                      </span>
+                      <br />
+                      <span class="aquam"
+                        >Work with the tools and services you use</span
+                      >
+                    </div>
 
-                                <div class="acquire">
+                    <div class="engage" href="">
+                      <span class="engage-customer" href=""
+                        >Engage Customer
+                      </span>
+                      <br />
+                      <span class="engage-start"
+                        >Engage Customers Get started with our simple snippet of
+                        JavaScript</span
+                      >
+                    </div>
 
-                                    <span class="aquire-users" href="https://www.youtube.com/watch?v=s6my0RUoX4c">Acquire Users </span>
-                                    <br>
-                                    <span class="aquam">Work with the tools and services you use</span>
+                    <div class="book" href="#">
+                      <span class="book-appointеments" href=""
+                        >Book Appointments
+                      </span>
+                      <br />
+                      <span class="offering">
+                        We offer measures like 2FA to ensure the safety
+                      </span>
+                    </div>
 
-                                </div>
-
-                                <div class="engage" href="">
-                                    <span class="engage-customer" href="">Engage Customer </span>
-                                    <br>
-                                    <span class="engage-start">Engage Customers Get started with our simple snippet of JavaScript</span>
-                                </div>
-
-                                <div class="book" href="#">
-                                    <span class="book-appointеments" href="">Book Appointments  </span>
-                                    <br>
-                                    <span class="offering"> We offer measures like 2FA to ensure the safety </span>
-                                </div>
-
-                                <div class="general" href="">
-                                    <span class="generate-leads" href="">Generate Leads </span>
-                                    <br>
-                                    <span class="become-designer"> Become a better designer by learning this courses</span>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="menu-tab">Stories</li>
-                    <li class="menucure">Home</li>
+                    <div class="general" href="">
+                      <span class="generate-leads" href=""
+                        >Generate Leads
+                      </span>
+                      <br />
+                      <span class="become-designer">
+                        Become a better designer by learning this courses</span
+                      >
+                    </div>
+                  </div>
                 </ul>
-            </nav>
-            <button href="" class="btmen">Get Started</button>
+              </li>
+              <li class="menu-tab">Stories</li>
+              <li class="menucure">Home</li>
+            </ul>
+          </nav>
+          <button href="" class="btmen">Get Started</button>
         </div>
-        <img class="picture" src="./ouch.png">
+        <img class="picture" src="./images/ouch.png" />
         <div class="main_on_header">
-
-
-
-            <span class="build">Build stunning websites & app <br>websites</span>
-            <span class="creative">Create live segments and target the right people for messages based on their behaviors.</span>
-
+          <span class="build"
+            >Build stunning websites & app <br />websites</span
+          >
+          <span class="creative"
+            >Create live segments and target the right people for messages based
+            on their behaviors.</span
+          >
         </div>
         <div class="reserved">
-            <button href="" class="started">Get started</button>
-            <button href="" class="more"> Learn More </button>
+          <button href="" class="started">Get started</button>
+          <button href="" class="more">Learn More</button>
         </div>
 
         <div class="down_foot">
+          <div class="what_is_it">
+            <div class="sp_who">What is it about?</div>
+            <br />
+            Building a website for a startup that looks amazing is not a rocket
+            science anymore.
+          </div>
 
-            <div class="what_is_it">
-                <div class="sp_who">What is it about?</div>
-                <br> Building a website for a startup that looks amazing is not a rocket science anymore.
-            </div>
-
-
-            <div class="what_is_it">
-                <span class="sp_who">Who is it for?</span>
-                <br> Startups, small companies and teams, entrepreneurs and web developers.
-            </div>
-
+          <div class="what_is_it">
+            <span class="sp_who">Who is it for?</span>
+            <br />
+            Startups, small companies and teams, entrepreneurs and web
+            developers.
+          </div>
         </div>
+      </div>
     </div>
 
-</body>
+    <!--Здесь Кончается часть Максима -->
+    <!-- здесь начинается Колина часть html -->
+    <div class="hiring">
+      <h1 class="title_hiring">We're hiring</h1>
+      <span class="description_hiring"
+        >We’re a team of lifelong learners. We’re equal parts left and right
+        brained.</span
+      >
+      <button class="more-about-company">More about Company</button>
+      <div class="vacancies">
+        <div class="vacancies_title">Front-End Developer</div>
+        <div class="vacancies_location">Los Angeles / Remote</div>
+        <div class="vacancies_action-button">
+          <img
+            class="arrow"
+            src="./images/arrow_action-button.svg"
+            alt="arrow"
+            width="7px"
+            height="12px"
+          />
+        </div>
+      </div>
+      <div class="vacancies">
+        <div class="vacancies_title">Community manager</div>
+        <div class="vacancies_location">New York / Full-Time</div>
+        <div class="vacancies_action-button">
+          <img
+            class="arrow"
+            src="./images/arrow_action-button.svg"
+            alt="arrow"
+            width="7px"
+            height="12px"
+          />
+        </div>
+      </div>
+      <div class="vacancies">
+        <div class="vacancies_title">Front-End Developer</div>
+        <div class="vacancies_location">New York / Full-Time</div>
+        <div class="vacancies_action-button">
+          <img
+            class="arrow"
+            src="./images/arrow_action-button.svg"
+            alt="arrow"
+            width="7px"
+            height="12px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- здесь заканчивается Колина часть html -->
 
+    <!--Nazar part-->
+
+    <div class="page-content">
+      <div class="header-first">Engage Visitors</div>
+      <div class="header-second">Understand your audience</div>
+      <div class="description_content">
+        <p>
+          Early stage company? Eligible applicants get all of our products for
+          just $49 a month.
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="blue page-buttons">Get Started</button>
+        <button class="white page-buttons">Learn More</button>
+      </div>
+      <div class="pics">
+        <div class="pictures">
+          <img class="pic" src="images/developer.png" alt="Developer" />
+          <span class="pic-text">Developers</span>
+        </div>
+        <div class="pictures">
+          <img class="pic" src="images/tv.png" alt="TV" />
+          <span class="pic-text">Entertainment</span>
+        </div>
+        <div class="pictures">
+          <img class="pic" src="images/athlet.png" alt="Athlet" />
+          <span class="pic-text">Athletes</span>
+        </div>
+        <div class="pictures">
+          <img class="pic" src="images/lamp.png" alt="Lightbulb" />
+          <span class="pic-text">Creators</span>
+        </div>
+      </div>
+    </div>
+
+    <!--end Nazar part-->
+
+    <!--5Ilya part-->
+   
+      <div class="footer">
+        <div class="footer-column">
+          <div class="footer-column-for-logo">
+            <div class="footer-column-for-name-logo">
+              <p class="name-logo">Foundation</p>
+              <p class="company-name">Startup landing template</p>
+            </div>
+            <div class="footer-column-for-picture">
+              <img
+                class="logo"
+                src="./images/picture-logo.png"
+                width="60px"
+                height="60px"
+              />
+            </div>
+          </div>
+          <ul class="list-for-company-description">
+            <li class="company-description">
+              Foundation is a website template for startups and small teams. It
+              helps to build a website in no time.
+            </li>
+          </ul>
+          <div class="footer-column-for-buttons">
+            <div class="buttons">
+              <a class="app-store" href="#"
+                ><img
+                  class="picture-app_store"
+                  src="./images/app-store.png"
+                  alt="button app-store"
+              /></a>
+              <a class="google-play" href="#"
+                ><img
+                  class="picture-google_play"
+                  src="./images/google-play.png"
+                  alt="button google-play"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-column-for-text">
+          <span class="name-product">Product</span>
+          <ul>
+            <a class="chapter-link" href="#">Acquire Users</a>
+            <a class="chapter-link" href="#">Content Marketing</a>
+            <a class="chapter-link" href="#">Website Templates</a>
+            <a class="chapter-link" href="#">Customer Management</a>
+            <a class="chapter-link" href="#">Virtual Inbox</a>
+          </ul>
+        </div>
+        <div class="footer-column-for-text">
+          <span class="name-company">Company</span>
+          <ul>
+            <a class="chapter-link" href="#">About Foundation</a>
+            <a class="chapter-link" href="#">Brand Guidelines</a>
+            <a class="chapter-link" href="#">Press Kit</a>
+            <a class="chapter-link" href="#">Support</a>
+          </ul>
+        </div>
+      </div>
+      <div class="label"></div>
+      <div class="under-label">
+        <div class="under-label-left">
+          <a class="under-label-button-terms" href="#">Terms</a>
+          <a class="under-label-button-privacy" href="#">Privacy</a>
+          <a class="under-label-button-license" href="#">License</a>
+        </div>
+        <div class="under-label-right">
+          <a href="#"
+            ><img
+              class="under-label-button-twitter"
+              src="./images/twitter.png"
+              alt="button twitter"
+          /></a>
+          <a href="#"
+            ><img
+              class="under-label-button-facebook-and-linked"
+              src="./images/facebook.png"
+              alt="button facebook"
+          /></a>
+          <a href="#"
+            ><img
+              class="under-label-button-facebook-and-linked"
+              src="./images/in-gr.png"
+              alt="button in-gr"
+          /></a>
+        </div>
+      </div>
+   
+
+    <!--end Ilya part-->
+  </body>
 </html>
