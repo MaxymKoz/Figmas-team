@@ -1,0 +1,181 @@
+@import "_content-addition.scss";
+
+.page-content {
+    max-width: 1400px;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Work Sans';
+}
+
+.header-first {
+    display: flex;
+    font-weight: $fbold;
+    line-height: 34px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 17px;
+    @include font(22px, #2B292D)
+}
+
+@media (min-width: $breakpoint) {
+    .header-first {
+        margin-top: 108px;
+        margin-bottom: 24px;
+    }
+}
+
+.header-second {
+    display: flex;
+    font-weight: $fbold;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.357143px;
+    @include block-size(290px, 80px);
+    @include font (40px, #2B292D);
+}
+
+@media (min-width: $breakpoint) {
+    .header-second {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        @include block-size(555px, 112px);
+    }
+}
+
+.description_content {
+    display: flex;
+    font-weight: $fthin;
+    line-height: 34px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    @include block-size(290px, 136px);
+    @include font(24px, #2B292D)
+}
+
+@media (min-width: $breakpoint) {
+    .description_content {
+        @include block-size(555px, 72px);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: $breakpoint) {
+    .buttons {
+        flex-direction: row;
+    }
+}
+
+.page-buttons {
+    border: none;
+    box-shadow: 0px 1px 5px -3px #000000;
+    background-color: #3040C4;
+    font-weight: $fbold;
+    line-height: 13px;
+    @include block-size(290px, 48px);
+    @include font(18px, #000)
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+            0px 11px 55px rgba(0, 0, 0, 0.07);
+    }
+}
+
+
+@media (min-width: $breakpoint) {
+    .page-buttons {
+        @include block-size(160px, 48px);
+    }
+}
+
+.blue {
+    background-color: #3040C4;
+    color: white;
+}
+
+@media (min-width: $breakpoint) {
+    .white {
+        margin-right: 5px;
+    }
+}
+
+.white {
+    margin-top: 17px;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+@media (min-width: $breakpoint) {
+    .white {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+}
+
+
+.pics {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: $fbold;
+    line-height: 28px;
+    justify-content: center;
+    @include font(22px, #2B292D)
+}
+
+@media (min-width: $breakpoint) {
+    .pics {
+        flex-direction: row;
+        margin-top: 111px;
+        margin-bottom: 110px;
+    }
+}
+
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    @include block-size(290px, 300px);
+
+    &:hover {
+        background: #3141C5;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+            0px 11px 55px rgba(0, 0, 0, 0.07);
+    }
+
+    .pic {
+        margin: 22px;
+        @include block-size(138px, 195px);
+    }
+
+}
+
+@media (min-width: $breakpoint) {
+    .pictures {
+        margin: 16px;
+        @include block-size(262px, 300px);
+    }
+}
+
