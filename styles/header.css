@@ -1,0 +1,540 @@
+* {
+  display: flex;
+  box-sizing: border-box;
+}
+body {
+  flex-direction: column;
+}
+
+.max_code {
+  justify-content: center;
+  width: 1400px;
+  height: 910px;
+  background-color: pink;
+}
+
+@media screen and (max-width: 600px) {
+  .max_code {
+    width: 100%;
+    height: 1280px;
+  }
+}
+
+.menu_picture {
+  height: 60px;
+  width: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_picture {
+    height: 64px;
+    width: 64px;
+  }
+}
+
+.menu {
+  width: 1400px;
+  height: 920px;
+  margin-left: 7%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+  }
+}
+
+.nav_menu {
+  width: 100%;
+  height: 9.5vh;
+}
+
+@media screen and (max-width: 600px) {
+  .nav_menu {
+    background-color: white;
+    width: 100%;
+    height: 64px;
+  }
+}
+
+.startup {
+  width: 30vh;
+  margin-left: 11.2vh;
+  position: absolute;
+  height: 64px;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .startup {
+    margin-left: 10vh;
+  }
+}
+
+.text-menu {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 700;
+  width: 222px;
+  height: 32px;
+  position: absolute;
+  order: 1;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .text-menu {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    align-items: center;
+  }
+}
+
+.text-menu2 {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-weight: 400;
+  height: 65px;
+  position: absolute;
+  align-items: flex-end;
+  order: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .text-menu2 {
+    visibility: hidden;
+  }
+}
+
+.one {
+  position: absolute;
+  width: 2.8vh;
+  height: 7.56vh;
+  margin-left: 37%;
+}
+
+@media screen and (max-width: 600px) {
+  .one {
+    width: 2.6vh;
+    height: 3.2vh;
+    margin-left: 60%;
+  }
+}
+
+.main_on_header {
+  width: 40vh;
+  height: 3vh;
+  margin-top: 10vh;
+  position: absolute;
+  align-self: flex-start;
+  justify-self: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .main_on_header {
+    width: 100%;
+    height: 20%;
+    margin-top: 28vh;
+  }
+}
+
+.btmen {
+  width: 8%;
+  height: 72%;
+  margin-left: 76%;
+  text-align: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .btmen {
+    visibility: hidden;
+    margin: 0px;
+  }
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s linear;
+}
+
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px;
+}
+
+.topmenu > li:first-child {
+  border-left: 0;
+}
+
+.topmenu {
+  font-family: "Work Sans";
+  font-size: 18px;
+  font-size: 12px;
+  color: #fefdfd;
+  letter-spacing: 2px;
+}
+
+.topmenu > li > a.active,
+.submenu a:hover {
+  color: black;
+}
+
+.submenu {
+  position: absolute;
+  z-index: 2;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #cbcbcc;
+  border-left: 1px solid #cbcbcc;
+  border-right: 1px solid #cbcbcc;
+  opacity: 0;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: 0.3s linear;
+  left: 100%;
+  top: -1px;
+  transition: 0.3s linear;
+}
+
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-choose {
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: white;
+  height: 291px;
+  width: 550px;
+  margin: 60px 90px 2px -105px;
+  border-radius: 8px;
+  align-items: stretch;
+}
+@media screen and (max-width: 600px) {
+  .menu-choose {
+    width: 400px;
+    height: 336px;
+    margin-left: -212px;
+  }
+}
+
+.menu-choose > div {
+  border-radius: 8px;
+}
+
+ul > li {
+  margin: 12px;
+}
+
+.engage-customer {
+  font-family: "Work Sans";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.book-appointеments {
+  font-family: "Work Sans";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.generate-leads {
+  font-family: "Work Sans";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.general {
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  height: 50%;
+  width: 50%;
+}
+
+.offering,
+.engage-start,
+.aquam,
+.become-designer {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  z-index: 3;
+}
+
+.engage-customer:active,
+.aquire-users:active,
+.book-appointеments:active,
+.generate-leads:active {
+  color: green;
+}
+
+.acquire {
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  height: 50%;
+  width: 50%;
+}
+
+.aquire-users {
+  font-family: "Work Sans";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.engage {
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  height: 50%;
+  width: 50%;
+}
+
+.book {
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  height: 50%;
+  width: 50%;
+}
+
+.active {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.menu-tab {
+  color: black;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.menucure {
+  color: black;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.picture {
+  position: absolute;
+  height: 448px;
+  width: 645px;
+  margin-top: 4%;
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .picture {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    margin-top: 100%;
+    margin-left: 22%;
+  }
+}
+
+.build {
+  position: absolute;
+  height: 379px;
+  width: 469px;
+  font-family: "Work Sans";
+  font-weight: bold;
+  font-size: 63px;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 600px) {
+  .build {
+    height: 49vh;
+    width: 100%;
+    margin-top: -47%;
+    margin-left: 30%;
+    justify-content: center;
+    font-size: 50px;
+  }
+}
+
+.creative {
+  height: 102px;
+  width: 456px;
+  position: absolute;
+  margin: 302px 802px 230px 0px;
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 600px) {
+  .creative {
+    margin-top: 13%;
+    margin-left: 10vh;
+  }
+}
+
+.reserved {
+  height: 48px;
+  width: 328px;
+  position: absolute;
+  margin: 600px 940px 126px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .reserved {
+    flex-direction: column;
+    width: 100%;
+    height: 19vh;
+    margin-top: 162%;
+    margin-left: 22%;
+  }
+}
+
+.more {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 47.5%;
+  background-color: white;
+  color: blue;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .more {
+    height: 15vh;
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+.started {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 47.5%;
+  background-color: blue;
+  color: white;
+  margin-right: 10px;
+  font-family: "Work Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .started {
+    width: 100%;
+    height: 15vh;
+  }
+}
+
+.down_foot {
+  position: absolute;
+  height: 22%;
+  width: 65%;
+  background: #f4f5f7;
+  margin-top: 42.2%;
+}
+
+@media screen and (max-width: 600px) {
+  .down_foot {
+    width: 100%;
+    height: 37%;
+    flex-direction: column;
+    margin-top: 218%;
+    margin-left: 23%;
+  }
+}
+
+.what_is _it {
+  width: 50%;
+  height: 100%;
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .what_is_it {
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+}
+
+.sp_who {
+  font-family: "Work Sans";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 50px;
+  position: absolute;
+  align-self: flex-start;
+  justify-self: center;
+}
+
+@media screen and (max-width: 600px) {
+  .sp_who {
+    margin-top: 6px;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
