@@ -1,0 +1,296 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Work Sans", "sans-serif";
+  max-width: 1400px;
+}
+
+.hiring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.title_hiring {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-align: center;
+  color: #2B292D;
+  font-size: 40px;
+}
+@media screen and (min-width: 600px) {
+  .title_hiring {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+
+.description_hiring {
+  color: #2B292D;
+  margin: 18px auto 30px;
+  top: 113px;
+  width: 290px;
+  height: 136px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .description_hiring {
+    width: 555px;
+    max-height: 72px;
+  }
+}
+
+.more-about-company {
+  margin: 0px auto 39px;
+  padding: 0;
+  width: 290px;
+  height: 48px;
+  border-style: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040C4;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.more-about-company:hover {
+  background-color: #fff;
+  color: #3040C4;
+  border: 1px solid #3040C4;
+}
+
+.vacancies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 290px;
+  height: 140px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+}
+@media screen and (min-width: 600px) {
+  .vacancies {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+    max-height: 81px;
+  }
+}
+.vacancies:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #3040C4;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+.vacancies_title {
+  max-width: 150px;
+  padding: 19px 71px 18px 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+@media screen and (min-width: 600px) {
+  .vacancies_title {
+    display: flex;
+    padding: 0;
+    margin-left: 25px;
+    align-items: center;
+    min-width: 408px;
+  }
+}
+.vacancies_location {
+  max-width: 180px;
+  padding: 0 50px 19px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.6;
+}
+@media screen and (min-width: 600px) {
+  .vacancies_location {
+    display: flex;
+    align-items: center;
+    min-width: 232px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 28px;
+    margin-left: 20px;
+  }
+}
+.vacancies_action-button {
+  text-align: center;
+  line-height: 140px;
+  width: 50px;
+  height: 140px;
+  background: #D5D4D5;
+  border-radius: 0px 8px 8px 0px;
+}
+@media screen and (min-width: 600px) {
+  .vacancies_action-button {
+    background-color: transparent;
+    height: 81px;
+    line-height: 81px;
+  }
+}
+
+/* Здесь начинатеся часть Ильи  */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  box-sizing: border-box;
+  margin-top: 250px;
+}
+
+.block-one {
+  display: flex;
+  flex-direction: column;
+  right: 20px;
+}
+
+.block-two {
+  display: flex;
+  flex-direction: column;
+  margin-left: 165px;
+}
+
+.block-three {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+}
+
+.chapter-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.company-name {
+  margin-left: 60px;
+  margin-top: -25px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.name-logo {
+  margin-left: 60px;
+  margin-top: -55px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2B292D;
+}
+
+.company-description {
+  margin-top: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.name-product {
+  margin-left: 40px;
+  margin-top: 5px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2B292D;
+}
+
+.name-company {
+  margin-left: 40px;
+  margin-top: -15px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #2B292D;
+}
+
+.logo {
+  margin-left: -5px;
+}
+
+.under-label-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 300px;
+  margin-left: 35px;
+  align-items: center;
+}
+
+.picture-app_store {
+  width: 135px;
+  height: 40px;
+}
+
+.picture-google_play {
+  width: 135px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  width: 5000px;
+  height: 1px;
+  margin-top: -45px;
+  background: #2B292D;
+}
+
+.under-label-right {
+  display: flex;
+  flex-direction: row;
+  margin-left: 950px;
+  align-items: center;
+}
+
+.picture-twitter {
+  margin-left: 20px;
+}
+
+.picture-facebook {
+  margin-left: 20px;
+}
+
+.picture-in_gr {
+  margin-left: 20px;
+}
+
+@media screen and (orientation: portrait) {}
+
+/* Здесь заканчивается часть Ильи  */
+
+/*# sourceMappingURL=styles.css.map */
