@@ -1,5 +1,3 @@
-/*=============================Kolya's part==================================*/
-
 $primary-color: #fff;
 $secondary-color: #3040C4;
 $action-button-color: #D5D4D5;
@@ -7,31 +5,15 @@ $primary-text-color: #2B292D;
 $primary-font-weight: 700;
 $secondary-font-weight: 400;
 $button-cursor: pointer;
-
-/*=============================Kolya's part==================================*/
-
-
-/*=============================Nazar's part==================================*/
-
-$fbold: 700;
-$fthin: 400;
+$breakpoint: 600px;
 
 @mixin block-size ($widthsize, $heightsize) {
     width: $widthsize;
     height: $heightsize;
 }
 
-/*=============================Nazar's part==================================*/
-
-
-/*=============================common part===================================*/
-
-$breakpoint: 600px;
-
-@mixin small-breakpoint {
+@mixin large-breakpoint {
     @media screen and (min-width: $breakpoint) {
         @content;
     }
 }
-
-/*=============================common part====================================*/
