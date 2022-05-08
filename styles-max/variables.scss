@@ -1,0 +1,14 @@
+$primary-color:pink;
+$font-size-medium:18px;
+$breakpoint :600px;
+$max-width:100%;
+
+html {
+    font-family: 'Work Sans';
+}
+
+@mixin small-breakpoint {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
