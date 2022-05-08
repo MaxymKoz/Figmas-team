@@ -1,14 +1,4 @@
-@import 'vars.scss';
-
-* {
-    display: flex;
-    box-sizing: border-box;
-}
-
-body {
-    flex-direction: column;
-}
-
+@import '_variables.scss';
 
 .max_code {
     justify-content: center;
