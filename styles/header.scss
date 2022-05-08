@@ -1,6 +1,7 @@
-@import 'variables.scss';
+@import '_variables.scss';
 
 .max_code {
+    display: flex;
     justify-content: center;
     width: 1400px;
     height: 910px;
@@ -14,6 +15,7 @@
 }
 
 .menu_picture {
+    display: flex;
     height: 60px;
     width: 60px;
 
@@ -25,6 +27,7 @@
 }
 
 .menu {
+    display: flex;
     width: 1400px;
     height: 920px;
     margin-left: 7%;
@@ -37,8 +40,9 @@
 }
 
 .nav_menu {
+    display: flex;
     width: $max-width;
-    height: 9.5vh;
+    height: 8vh;
 
     @include small-breakpoint {
         background-color: white;
@@ -48,8 +52,9 @@
 }
 
 .startup {
+    display: flex;
     width: 30vh;
-    margin-left: 13.2vh;
+    margin-left: 9.2vh;
     position: absolute;
     height: 64px;
     flex-direction: column;
@@ -60,7 +65,7 @@
 }
 
 .text-menu {
-
+    display: flex;
     font-size: $font-size-medium;
     font-weight: 700;
     width: 222px;
@@ -78,7 +83,7 @@
 }
 
 .text-menu2 {
-
+    display: flex;
     font-size: $font-size-medium;
     font-weight: 400;
     height: 65px;
@@ -92,6 +97,7 @@
 }
 
 .one {
+    display: flex;
     position: absolute;
     width: 2.8vh;
     height: 7.56vh;
@@ -105,6 +111,7 @@
 }
 
 .main_on_header {
+    display: flex;
     width: 40vh;
     height: 3vh;
     margin-top: 18vh;
@@ -122,6 +129,7 @@
 }
 
 .btmen {
+    display: flex;
     width: 8%;
     height: 72%;
     margin-left: 76%;
@@ -140,12 +148,15 @@
 }
 
 nav {
+    
     ul {
+        display: flex;
         margin: 0;
         padding: 0;
         list-style: none;
 
         &:after {
+            display: flex;
             content: "";
             display: block;
             clear: both;
@@ -153,6 +164,7 @@ nav {
     }
 
     a {
+        display: flex;
         text-decoration: none;
         display: block;
         transition: 0.3s linear;
@@ -160,21 +172,25 @@ nav {
 }
 
 .topmenu {
+    
     >li {
+        display: flex;
         float: left;
         position: relative;
         border-left: 1px;
 
         &:first-child {
+            display: flex;
             border-left: 0;
         }
 
         >a.active {
+            display: flex;
             color: black;
         }
     }
 
-
+    display: flex;
     font-size: $font-size-medium;
     font-size: 12px;
     color: #fefdfd;
@@ -183,9 +199,10 @@ nav {
 
 .submenu {
     a:hover {
+        display: flex;
         color: black;
     }
-
+    display: flex;
     position: absolute;
     z-index: 2;
     min-width: 200px;
@@ -203,12 +220,14 @@ nav {
 }
 
 nav li:hover>.submenu {
+    display: flex;
     transform: rotateX(0deg);
     visibility: visible;
     opacity: 1;
 }
 
 .menu-choose {
+    display: flex;
     flex-wrap: wrap;
     position: absolute;
     background-color: white;
@@ -225,18 +244,21 @@ nav li:hover>.submenu {
 }
 
 ul>li {
+    display: flex;
     margin: 12px;
 }
 
 .engage-customer,
 .book-appointеments,
 .generate-leads {
+    display: flex;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
 }
 
 .general {
+    display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
@@ -249,6 +271,7 @@ ul>li {
 .engage-start,
 .aquam,
 .become-designer {
+    display: flex;
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 26px;
@@ -260,10 +283,12 @@ ul>li {
 .aquire-users:active,
 .book-appointеments:active,
 .generate-leads:active {
+    display: flex;
     color: green;
 }
 
 .acquire {
+    display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
@@ -273,6 +298,7 @@ ul>li {
 }
 
 .aquire-users {
+    display: flex;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -280,6 +306,7 @@ ul>li {
 
 .engage,
 .book {
+    display: flex;
     flex-direction: column;
     background-color: white;
     color: black;
@@ -288,32 +315,32 @@ ul>li {
     width: 50%;
 }
 
-.active {
+.active {display: flex;
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.menu-tab {
+.menu-tab {display: flex;
     color: black;
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.menucure {
+.menucure {display: flex;
     color: black;
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.picture {
+.picture {display: flex;
     position: absolute;
     height: 448px;
     width: 645px;
     margin-top: 8%;
-    margin-left: 83px;
+    margin-left: 40%;
 
     @include small-breakpoint {
         position: absolute;
@@ -324,7 +351,7 @@ ul>li {
     }
 }
 
-.build {
+.build {display: flex;
     position: absolute;
     height: 379px;
     width: 469px;
@@ -343,7 +370,7 @@ ul>li {
     }
 }
 
-.creative {
+.creative {display: flex;
     height: 102px;
     width: 456px;
     position: absolute;
@@ -358,7 +385,7 @@ ul>li {
     }
 }
 
-.reserved {
+.reserved {display: flex;
     height: 48px;
     width: 328px;
     position: absolute;
@@ -373,7 +400,7 @@ ul>li {
     }
 }
 
-.more {
+.more {display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -391,7 +418,7 @@ ul>li {
     }
 }
 
-.started {
+.started {display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -409,7 +436,7 @@ ul>li {
     }
 }
 
-.down_foot {
+.down_foot {display: flex;
     position: absolute;
     height: 22%;
     width: 78%;
@@ -425,7 +452,7 @@ ul>li {
     }
 }
 
-.what_is_it {
+.what_is_it {display: flex;
     width: 50%;
     height: 100%;
     font-size: 22px;
@@ -446,7 +473,7 @@ ul>li {
 }
 
 .sp_who {
-
+    display: flex;
     font-size: 22px;
     font-weight: 700;
     line-height: 32px;
