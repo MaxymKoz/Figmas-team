@@ -6,6 +6,7 @@ $primary-font-weight: 700;
 $secondary-font-weight: 400;
 $button-cursor: pointer;
 $breakpoint: 600px;
+<<<<<<< HEAD:styles/_variables.scss
 $font-size-medium:18px;
 $max-width:100%;
 
@@ -16,6 +17,19 @@ $max-width:100%;
 
 @mixin large-breakpoint {
     @media screen and (min-width: $breakpoint) {
+=======
+$primary-color:pink;
+$font-size-medium:18px;
+$max-width:100%;
+
+html {
+    font-family: 'Work Sans';
+}
+
+    
+@mixin large-breakpoint {
+    @media screen and (max-width: $breakpoint) {
+>>>>>>> max-header:styles/variables.scss
         @content;
     }
 }
@@ -24,4 +38,17 @@ $max-width:100%;
     @media screen and (max-width: $breakpoint) {
         @content;
     }
+<<<<<<< HEAD:styles/_variables.scss
+=======
+}
+
+@mixin font ($fontsize, $fontcolor) {
+    font-size: $fontsize;  
+    color: $fontcolor;
+}
+
+@mixin block-size ($widthsize, $heightsize) {
+    width: $widthsize;
+    height: $heightsize;
+>>>>>>> max-header:styles/variables.scss
 }
