@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import 'vars.scss';
 
 * {
     display: flex;
@@ -42,7 +42,7 @@ body {
     @include small-breakpoint {
         width: $max-width;
         height: 100%;
-margin-left: 0px;
+        margin-left: 0px;
     }
 }
 
@@ -124,7 +124,6 @@ margin-left: 0px;
     flex-direction: column;
 
     @include small-breakpoint {
-
         width: $max-width;
         height: 20%;
         margin-top: 38vh;
@@ -140,7 +139,6 @@ margin-left: 0px;
     align-items: center;
     background-color: blue;
     color: white;
-
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 18px;
@@ -231,10 +229,8 @@ nav li:hover>.submenu {
     align-items: stretch;
 
     @include small-breakpoint {
-
         width: 400px;
-        height: 336px;
-        margin-left: -212px;
+        height: 364px;
     }
 }
 
@@ -245,7 +241,6 @@ ul>li {
 .engage-customer,
 .book-appointеments,
 .generate-leads {
-
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -264,7 +259,6 @@ ul>li {
 .engage-start,
 .aquam,
 .become-designer {
-
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 26px;
@@ -289,7 +283,6 @@ ul>li {
 }
 
 .aquire-users {
-
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -306,7 +299,6 @@ ul>li {
 }
 
 .active {
-
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 25px;
@@ -314,7 +306,6 @@ ul>li {
 
 .menu-tab {
     color: black;
-
     font-weight: 400;
     font-size: $font-size-medium;
     line-height: 25px;
@@ -322,7 +313,6 @@ ul>li {
 
 .menucure {
     color: black;
-
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 25px;
@@ -340,7 +330,7 @@ ul>li {
         width: $max-width;
         height: 25%;
         margin-top: 429px;
-        
+
     }
 }
 
@@ -348,7 +338,6 @@ ul>li {
     position: absolute;
     height: 379px;
     width: 469px;
-
     font-weight: bold;
     font-size: 63px;
     line-height: 78px;
@@ -369,7 +358,6 @@ ul>li {
     width: 456px;
     position: absolute;
     margin: 302px 802px 230px 0px;
-
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
@@ -402,7 +390,6 @@ ul>li {
     width: 47.5%;
     background-color: white;
     color: blue;
-
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 13px;
@@ -422,7 +409,6 @@ ul>li {
     background-color: blue;
     color: white;
     margin-right: 10px;
-
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 13px;
@@ -452,7 +438,6 @@ ul>li {
 .what_is_it {
     width: 50%;
     height: 100%;
-
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
@@ -475,7 +460,6 @@ ul>li {
     font-size: 22px;
     font-weight: 700;
     line-height: 32px;
-
     position: absolute;
     align-self: flex-start;
     justify-self: center;
