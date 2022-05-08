@@ -8,6 +8,486 @@ body {
     font-family: 'Work Sans', 'sans-serif';
     max-width: 1400px;
 }
+
+
+
+.max_code {
+    justify-content: center;
+    width: 1400px;
+    height: 910px;
+    background-color: pink;
+
+
+    @include small-breakpoint {
+        width: 100%;
+        height: 1080px;
+    }
+}
+
+.menu_picture {
+    height: 60px;
+    width: 60px;
+
+    @include small-breakpoint {
+
+        height: 64px;
+        width: 64px;
+    }
+}
+
+.menu {
+    width: 1400px;
+    height: 920px;
+    margin-left: 7%;
+
+    @include small-breakpoint {
+        width: $max-width;
+        height: 100%;
+margin-left: 0px;
+    }
+}
+
+.nav_menu {
+    width: $max-width;
+    height: 9.5vh;
+
+    @include small-breakpoint {
+        background-color: white;
+        width: $max-width;
+        height: 64px;
+    }
+}
+
+.startup {
+    width: 30vh;
+    margin-left: 13.2vh;
+    position: absolute;
+    height: 64px;
+    flex-direction: column;
+
+    @include small-breakpoint {
+        margin-left: 10vh;
+    }
+}
+
+.text-menu {
+
+    font-size: $font-size-medium;
+    font-weight: 700;
+    width: 222px;
+    height: 32px;
+    position: absolute;
+    order: 1;
+    align-items: center;
+
+    @include small-breakpoint {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        align-items: center;
+    }
+}
+
+.text-menu2 {
+
+    font-size: $font-size-medium;
+    font-weight: 400;
+    height: 65px;
+    position: absolute;
+    align-items: flex-end;
+    order: 2;
+
+    @include small-breakpoint {
+        visibility: hidden;
+    }
+}
+
+.one {
+    position: absolute;
+    width: 2.8vh;
+    height: 7.56vh;
+    margin-left: 37%;
+
+    @include small-breakpoint {
+        width: 2.6vh;
+        height: 3.2vh;
+        margin-left: 60%;
+    }
+}
+
+.main_on_header {
+    width: 40vh;
+    height: 3vh;
+    margin-top: 18vh;
+    position: absolute;
+    align-self: flex-start;
+    justify-self: flex-start;
+    flex-direction: column;
+
+    @include small-breakpoint {
+
+        width: $max-width;
+        height: 20%;
+        margin-top: 38vh;
+
+    }
+}
+
+.btmen {
+    width: 8%;
+    height: 72%;
+    margin-left: 76%;
+    text-align: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: 18px;
+
+    @include small-breakpoint {
+        visibility: hidden;
+        margin: 0px;
+    }
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        transition: 0.3s linear;
+    }
+}
+
+.topmenu {
+    >li {
+        float: left;
+        position: relative;
+        border-left: 1px;
+
+        &:first-child {
+            border-left: 0;
+        }
+
+        >a.active {
+            color: black;
+        }
+    }
+
+
+    font-size: $font-size-medium;
+    font-size: 12px;
+    color: #fefdfd;
+    letter-spacing: 2px;
+}
+
+.submenu {
+    a:hover {
+        color: black;
+    }
+
+    position: absolute;
+    z-index: 2;
+    min-width: 200px;
+    background: white;
+    border-top: 1px solid #cbcbcc;
+    border-left: 1px solid #cbcbcc;
+    border-right: 1px solid #cbcbcc;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: 0.3s linear;
+    left: 100%;
+    top: -1px;
+    transition: 0.3s linear;
+}
+
+nav li:hover>.submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-choose {
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: white;
+    height: 291px;
+    width: 550px;
+    margin: 60px 90px 2px -105px;
+    border-radius: 8px;
+    align-items: stretch;
+
+    @include small-breakpoint {
+
+        width: 400px;
+        height: 336px;
+        margin-left: -212px;
+    }
+}
+
+ul>li {
+    margin: 12px;
+}
+
+.engage-customer,
+.book-appointеments,
+.generate-leads {
+
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.general {
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 3;
+    height: 50%;
+    width: 50%;
+}
+
+.offering,
+.engage-start,
+.aquam,
+.become-designer {
+
+    font-weight: 400;
+    font-size: $font-size-medium;
+    line-height: 26px;
+    color: black;
+    z-index: 3;
+}
+
+.engage-customer:active,
+.aquire-users:active,
+.book-appointеments:active,
+.generate-leads:active {
+    color: green;
+}
+
+.acquire {
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 3;
+    height: 50%;
+    width: 50%;
+}
+
+.aquire-users {
+
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.engage,
+.book {
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    z-index: 3;
+    height: 50%;
+    width: 50%;
+}
+
+.active {
+
+    font-weight: 400;
+    font-size: $font-size-medium;
+    line-height: 25px;
+}
+
+.menu-tab {
+    color: black;
+
+    font-weight: 400;
+    font-size: $font-size-medium;
+    line-height: 25px;
+}
+
+.menucure {
+    color: black;
+
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: 25px;
+}
+
+.picture {
+    position: absolute;
+    height: 448px;
+    width: 645px;
+    margin-top: 8%;
+    margin-left: 83px;
+
+    @include small-breakpoint {
+        position: absolute;
+        width: $max-width;
+        height: 25%;
+        margin-top: 429px;
+        
+    }
+}
+
+.build {
+    position: absolute;
+    height: 379px;
+    width: 469px;
+
+    font-weight: bold;
+    font-size: 63px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+
+    @include small-breakpoint {
+        height: 49vh;
+        width: $max-width;
+        margin-top: -47%;
+        margin-left: 23%;
+        justify-content: center;
+        font-size: 50px;
+    }
+}
+
+.creative {
+    height: 102px;
+    width: 456px;
+    position: absolute;
+    margin: 302px 802px 230px 0px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    @include small-breakpoint {
+        margin-top: 18%;
+        margin-left: 12vh;
+    }
+}
+
+.reserved {
+    height: 48px;
+    width: 328px;
+    position: absolute;
+    margin: 600px 940px 126px 0px;
+
+    @include small-breakpoint {
+        flex-direction: column;
+        width: $max-width;
+        height: 19vh;
+        margin-top: 162%;
+        margin-left: 22%;
+    }
+}
+
+.more {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 47.5%;
+    background-color: white;
+    color: blue;
+
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: 13px;
+
+    @include small-breakpoint {
+        height: 15vh;
+        width: $max-width;
+        margin-top: 5%;
+    }
+}
+
+.started {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 47.5%;
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+
+    font-weight: 700;
+    font-size: $font-size-medium;
+    line-height: 13px;
+
+    @include small-breakpoint {
+        width: $max-width;
+        height: 15vh;
+    }
+}
+
+.down_foot {
+    position: absolute;
+    height: 22%;
+    width: 78%;
+    background: #f4f5f7;
+    margin-top: 47.2%;
+
+    @include small-breakpoint {
+        width: $max-width;
+        height: 37%;
+        flex-direction: column;
+        margin-top: 794px;
+        margin-left: 23%;
+    }
+}
+
+.what_is_it {
+    width: 50%;
+    height: 100%;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    justify-content: center;
+    align-items: center;
+
+    @include small-breakpoint {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 32px;
+        width: $max-width;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sp_who {
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+
+    position: absolute;
+    align-self: flex-start;
+    justify-self: center;
+
+    @include small-breakpoint {
+        margin-top: 6px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+}
 .hiring {
     display: flex;
     flex-direction: column;
