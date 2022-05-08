@@ -7,7 +7,12 @@ $secondary-font-weight: 400;
 $button-cursor: pointer;
 $breakpoint: 600px;
 
-@mixin small-breakpoint {
+@mixin block-size ($widthsize, $heightsize) {
+    width: $widthsize;
+    height: $heightsize;
+}
+
+@mixin large-breakpoint {
     @media screen and (min-width: $breakpoint) {
         @content;
     }
