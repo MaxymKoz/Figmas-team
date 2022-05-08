@@ -1,6 +1,4 @@
-
-
-@import 'variables.scss';
+@import '_variables.scss';
 
 .hiring {
     display: flex;
@@ -35,7 +33,7 @@
 
     @include large-breakpoint {
         width: 555px;
-        max-height: 72px; 
+        max-height: 72px;
     }
 }
 
