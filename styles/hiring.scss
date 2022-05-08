@@ -17,7 +17,7 @@
     color: $primary-text-color;
     font-size: 40px;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
         font-size: 56px;
         line-height: 56px;
     }
@@ -33,7 +33,7 @@
     font-size: 24px;
     text-align: center;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
         width: 555px;
         max-height: 72px; 
     }
@@ -71,7 +71,7 @@
     border-radius: 8px;
     border: 1px solid rgba(43, 41, 45, 0.2);
 
-    @include small-breakpoint {
+    @include large-breakpoint {
         flex-direction: row;
         justify-content: space-between;
         width: 750px;
@@ -91,7 +91,7 @@
         font-size: 22px;
         line-height: 28px;
 
-        @include small-breakpoint {
+        @include large-breakpoint {
             display: flex;
             padding: 0;
             margin-left: 25px;
@@ -107,7 +107,7 @@
         font-size: 16px;
         opacity: 0.6;
 
-        @include small-breakpoint {
+        @include large-breakpoint {
             display: flex;
             align-items: center;
             min-width: 232px;
@@ -126,7 +126,7 @@
         background: $action-button-color;
         border-radius: 0px 8px 8px 0px;
 
-        @include small-breakpoint {
+        @include large-breakpoint {
             background-color: transparent;
             height: 81px;
             line-height: 81px;

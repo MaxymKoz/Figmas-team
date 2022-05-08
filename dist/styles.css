@@ -18,7 +18,7 @@ html {
   color: #2B292D;
   font-size: 40px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .title_hiring {
     font-size: 56px;
     line-height: 56px;
@@ -35,7 +35,7 @@ html {
   font-size: 24px;
   text-align: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .description_hiring {
     width: 555px;
     max-height: 72px;
@@ -73,7 +73,7 @@ html {
   border-radius: 8px;
   border: 1px solid rgba(43, 41, 45, 0.2);
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .vacancies {
     flex-direction: row;
     justify-content: space-between;
@@ -94,7 +94,7 @@ html {
   font-size: 22px;
   line-height: 28px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .vacancies_title {
     display: flex;
     padding: 0;
@@ -110,7 +110,7 @@ html {
   font-size: 16px;
   opacity: 0.6;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .vacancies_location {
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ html {
   background: #D5D4D5;
   border-radius: 0px 8px 8px 0px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .vacancies_action-button {
     background-color: transparent;
     height: 81px;
@@ -147,7 +147,7 @@ html {
   height: 910px;
   background-color: pink;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .max_code {
     width: 100%;
     height: 1080px;
@@ -158,7 +158,7 @@ html {
   height: 60px;
   width: 60px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .menu_picture {
     height: 64px;
     width: 64px;
@@ -170,7 +170,7 @@ html {
   height: 920px;
   margin-left: 7%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .menu {
     width: 100%;
     height: 100%;
@@ -182,7 +182,7 @@ html {
   width: 100%;
   height: 9.5vh;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .nav_menu {
     background-color: white;
     width: 100%;
@@ -197,7 +197,7 @@ html {
   height: 64px;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .startup {
     margin-left: 10vh;
   }
@@ -212,7 +212,7 @@ html {
   order: 1;
   align-items: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .text-menu {
     font-size: 20px;
     font-weight: 700;
@@ -229,7 +229,7 @@ html {
   align-items: flex-end;
   order: 2;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .text-menu2 {
     visibility: hidden;
   }
@@ -241,7 +241,7 @@ html {
   height: 7.56vh;
   margin-left: 37%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .one {
     width: 2.6vh;
     height: 3.2vh;
@@ -258,7 +258,7 @@ html {
   justify-self: flex-start;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .main_on_header {
     width: 100%;
     height: 20%;
@@ -278,7 +278,7 @@ html {
   font-size: 18px;
   line-height: 18px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .btmen {
     visibility: hidden;
     margin: 0px;
@@ -355,7 +355,7 @@ nav li:hover > .submenu {
   border-radius: 8px;
   align-items: stretch;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .menu-choose {
     width: 400px;
     height: 364px;
@@ -453,7 +453,7 @@ ul > li {
   margin-top: 8%;
   margin-left: 83px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .picture {
     position: absolute;
     width: 100%;
@@ -471,7 +471,7 @@ ul > li {
   line-height: 78px;
   letter-spacing: -0.5px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .build {
     height: 49vh;
     width: 100%;
@@ -491,7 +491,7 @@ ul > li {
   font-size: 24px;
   line-height: 34px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .creative {
     margin-top: 18%;
     margin-left: 12vh;
@@ -504,7 +504,7 @@ ul > li {
   position: absolute;
   margin: 545px 940px 126px 0px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .reserved {
     flex-direction: column;
     width: 100%;
@@ -525,7 +525,7 @@ ul > li {
   font-size: 18px;
   line-height: 13px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .more {
     height: 15vh;
     width: 100%;
@@ -545,7 +545,7 @@ ul > li {
   font-size: 18px;
   line-height: 13px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .started {
     width: 100%;
     height: 15vh;
@@ -559,7 +559,7 @@ ul > li {
   background: #f4f5f7;
   margin-top: 47.2%;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .down_foot {
     width: 100%;
     height: 37%;
@@ -578,7 +578,7 @@ ul > li {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .what_is_it {
     font-size: 22px;
     font-weight: 400;
@@ -598,7 +598,7 @@ ul > li {
   align-self: flex-start;
   justify-self: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .sp_who {
     margin-top: 6px;
     font-size: 22px;

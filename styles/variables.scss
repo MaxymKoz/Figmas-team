@@ -15,8 +15,14 @@ html {
 }
 
     
+@mixin large-breakpoint {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
 @mixin small-breakpoint {
-    @media screen and (min-width: $breakpoint) {
+    @media screen and (max-width: $breakpoint) {
         @content;
     }
 }
