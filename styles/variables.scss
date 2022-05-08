@@ -6,9 +6,27 @@ $primary-font-weight: 700;
 $secondary-font-weight: 400;
 $button-cursor: pointer;
 $breakpoint: 600px;
+$primary-color:pink;
+$font-size-medium:18px;
+$max-width:100%;
 
+html {
+    font-family: 'Work Sans';
+}
+
+    
 @mixin small-breakpoint {
     @media screen and (min-width: $breakpoint) {
         @content;
     }
+}
+
+@mixin font ($fontsize, $fontcolor) {
+    font-size: $fontsize;  
+    color: $fontcolor;
+}
+
+@mixin block-size ($widthsize, $heightsize) {
+    width: $widthsize;
+    height: $heightsize;
 }
