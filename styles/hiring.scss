@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 @import '_variables.scss';
-=======
-// здесь начинается Колина часть кода
-
-@import 'variables.scss';
->>>>>>> max-header
 
 .hiring {
     display: flex;
@@ -39,11 +33,7 @@
 
     @include large-breakpoint {
         width: 555px;
-<<<<<<< HEAD
         max-height: 72px;
-=======
-        max-height: 72px; 
->>>>>>> max-header
     }
 }
 
