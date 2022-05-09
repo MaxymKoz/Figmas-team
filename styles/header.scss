@@ -3,152 +3,166 @@
 .max_code {
     display: flex;
     justify-content: center;
-    width: 1400px;
-    height: 910px;
+    width: 49.5vh;
+    height: 1294px;
     background-color: pink;
+    flex-direction: column;
 
 
-    @include small-breakpoint {
+    @include large-breakpoint {
+        display: flex;
         width: 100%;
-        height: 1080px;
+        height: 910px;
     }
 }
 
 .menu_picture {
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 64px;
+    width: 64px;
 
-    @include small-breakpoint {
-
-        height: 64px;
-        width: 64px;
+    @include large-breakpoint {
+        display: flex;
+        height: 60px;
+        width: 60px;
     }
 }
 
 .menu {
     display: flex;
-    width: 1400px;
-    height: 920px;
-    margin-left: 7%;
+    width: $max-width;
+    height: 100%;
+    margin-left: 0%;
 
-    @include small-breakpoint {
-        width: $max-width;
+    @include large-breakpoint {
+        display: flex;
+        width: 1400px;
         height: 100%;
-        margin-left: 0px;
+        margin-left: 7%;
     }
 }
 
 .nav_menu {
     display: flex;
     width: $max-width;
-    height: 8vh;
+    height: 64px;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
+        display: flex;
         background-color: white;
         width: $max-width;
-        height: 64px;
+        height: 8vh;
     }
 }
 
 .startup {
     display: flex;
     width: 30vh;
-    margin-left: 9.2vh;
+    margin-left: 10vh;
     position: absolute;
     height: 64px;
     flex-direction: column;
 
-    @include small-breakpoint {
-        margin-left: 10vh;
+    @include large-breakpoint {
+        display: flex;
+        margin-left: 9.2vh;
     }
 }
 
 .text-menu {
     display: flex;
-    font-size: $font-size-medium;
-    font-weight: 700;
-    width: 222px;
-    height: 32px;
-    position: absolute;
-    order: 1;
+    font-size: 20px;
+    line-height: 25px;
     align-items: center;
+    font-weight: $primary-font-weight;
 
-    @include small-breakpoint {
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 25px;
+    @include large-breakpoint {
+        display: flex;
+        font-size: $font-size-medium;
+        font-weight: $primary-font-weight;
+        width: 222px;
+        height: 32px;
+        position: absolute;
+        order: 1;
         align-items: center;
     }
 }
 
 .text-menu2 {
+    visibility: hidden;
     display: flex;
-    font-size: $font-size-medium;
-    font-weight: 400;
-    height: 65px;
-    position: absolute;
-    align-items: flex-end;
-    order: 2;
 
-    @include small-breakpoint {
-        visibility: hidden;
+    @include large-breakpoint {
+        display: flex;
+        font-size: $font-size-medium;
+        font-weight:$secondary-font-weight ;
+        height: 45px;
+        
+        align-items: flex-end;
+        order: 2;
+        visibility: visible;
     }
 }
 
 .one {
     display: flex;
     position: absolute;
-    width: 2.8vh;
-    height: 7.56vh;
-    margin-left: 37%;
+    width: 2.6vh;
+    height: 3.2vh;
+    margin-left: 19%;
+    margin-top: 7%;
 
-    @include small-breakpoint {
-        width: 2.6vh;
-        height: 3.2vh;
-        margin-left: 60%;
-    }
+    @include large-breakpoint {
+        display: flex;
+        width: 2.8vh;
+        height: 7.56vh;
+        margin-left: 37%;
+    margin-top: 0%;}
 }
 
 .main_on_header {
+    font-weight: $primary-font-weight;
     display: flex;
-    width: 40vh;
-    height: 3vh;
-    margin-top: 18vh;
+    width: $max-width;
+    height: 20%;
+    margin-top: 33vh;
     position: absolute;
     align-self: flex-start;
     justify-self: flex-start;
     flex-direction: column;
 
-    @include small-breakpoint {
-        width: $max-width;
-        height: 20%;
-        margin-top: 38vh;
-
+    @include large-breakpoint {
+        flex-direction: row;
+        display: flex;
+        width: 40vh;
+        height: 3vh;
+        margin-top: 5vh;
     }
 }
 
 .btmen {
     display: flex;
-    width: 8%;
-    height: 72%;
-    margin-left: 76%;
-    text-align: center;
-    align-items: center;
-    background-color: blue;
-    color: white;
-    font-weight: 700;
-    font-size: $font-size-medium;
-    line-height: 18px;
+    visibility: hidden;
+    margin: 0px;
 
-    @include small-breakpoint {
-        visibility: hidden;
-        margin: 0px;
+    @include large-breakpoint {
+        display: flex;
+        width: 8%;
+        height: 72%;
+        margin-left: 84.6%;
+        text-align: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        line-height: 18px;
+visibility: visible;
     }
 }
 
 nav {
-    
+
     ul {
         display: flex;
         margin: 0;
@@ -172,7 +186,7 @@ nav {
 }
 
 .topmenu {
-    
+
     >li {
         display: flex;
         float: left;
@@ -202,6 +216,7 @@ nav {
         display: flex;
         color: black;
     }
+
     display: flex;
     position: absolute;
     z-index: 2;
@@ -231,15 +246,20 @@ nav li:hover>.submenu {
     flex-wrap: wrap;
     position: absolute;
     background-color: white;
-    height: 291px;
-    width: 550px;
+    width: 400px;
+    height: 364px;
     margin: 60px 90px 2px -105px;
     border-radius: 8px;
     align-items: stretch;
 
-    @include small-breakpoint {
-        width: 400px;
-        height: 364px;
+    @include large-breakpoint {
+        display: flex;
+        background-color: white;
+        height: 291px;
+        width: 550px;
+        margin: 60px 90px 2px -105px;
+        border-radius: 8px;
+        align-items: stretch;
     }
 }
 
@@ -272,7 +292,7 @@ ul>li {
 .aquam,
 .become-designer {
     display: flex;
-    font-weight: 400;
+    $primary-font-weightight;
     font-size: $font-size-medium;
     line-height: 26px;
     color: black;
@@ -315,158 +335,181 @@ ul>li {
     width: 50%;
 }
 
-.active {display: flex;
-    font-weight: 400;
+.active {
+    display: flex;
+    $primary-font-weightight;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.menu-tab {display: flex;
+.menu-tab {
+    display: flex;
     color: black;
-    font-weight: 400;
+    $primary-font-weightight;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.menucure {display: flex;
+.menucure {
+    display: flex;
     color: black;
     font-weight: 700;
     font-size: $font-size-medium;
     line-height: 25px;
 }
 
-.picture {display: flex;
+.picture {
+    display: flex;
     position: absolute;
-    height: 448px;
-    width: 645px;
-    margin-top: 8%;
-    margin-left: 40%;
+    width: $max-width;
+    height: 25%;
+    margin-top: 395px;
+    margin-left: 3.5%;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
+        display: flex; 
         position: absolute;
-        width: $max-width;
-        height: 25%;
-        margin-top: 429px;
-
+        height: 448px;
+        width: 645px;
+        margin-top: 8%;
+        margin-left: 40%;
     }
 }
 
-.build {display: flex;
-    position: absolute;
-    height: 379px;
-    width: 469px;
-    font-weight: bold;
-    font-size: 63px;
-    line-height: 78px;
-    letter-spacing: -0.5px;
+.build {
+    display: flex;
+    height: 49vh;
+    width: $max-width;
+    margin-top: -47%;
+    margin-left: 7%;
+    justify-content: center;
+    font-size: 50px;
 
-    @include small-breakpoint {
-        height: 49vh;
-        width: $max-width;
-        margin-top: -47%;
-        margin-left: 23%;
-        justify-content: center;
-        font-size: 50px;
-    }
-}
-
-.creative {display: flex;
-    height: 102px;
-    width: 456px;
-    position: absolute;
-    margin: 302px 802px 230px 0px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-
-    @include small-breakpoint {
+    @include large-breakpoint {
         margin-top: 18%;
-        margin-left: 12vh;
+        margin-left: 0%;
+        display: flex;
+        position: absolute;
+        height: 379px;
+        width: 469px;
+        font-weight: bold;
+        font-size: 63px;
+        line-height: 78px;
+        letter-spacing: -0.5px;
     }
 }
 
-.reserved {display: flex;
-    height: 48px;
-    width: 328px;
-    position: absolute;
-    margin: 545px 940px 126px 0px;
+.creative {
+    display: flex;
+    margin-top: 6%;
+    margin-left: 7vh;
+    flex-direction: column;
+    height: 45vh;
+    width: 75%;
 
-    @include small-breakpoint {
-        flex-direction: column;
-        width: $max-width;
-        height: 19vh;
-        margin-top: 162%;
-        margin-left: 22%;
+    @include large-breakpoint {
+        display: flex;
+        height: 102px;
+        width: 456px;
+        position: absolute;
+        margin: 302px 802px 230px 0px;
+        $primary-font-weightight;
+        font-size: 24px;
+        line-height: 34px;
     }
 }
 
-.more {display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 47.5%;
-    background-color: white;
-    color: blue;
-    font-weight: 700;
-    font-size: $font-size-medium;
-    line-height: 13px;
+.reserved {
+    display: flex;
+    flex-direction: column;
+    width: $max-width;
+    height: 19vh;
+    margin-top: 150%;
+    margin-right: 31%;
 
-    @include small-breakpoint {
-        height: 15vh;
-        width: $max-width;
-        margin-top: 5%;
+    @include large-breakpoint {
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        width: 328px;
+        position: absolute;     
+        margin: 490px 940px 126px 0px;
+
     }
 }
 
-.started {display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 47.5%;
+.more {
     background-color: blue;
     color: white;
-    margin-right: 10px;
-    font-weight: 700;
-    font-size: $font-size-medium;
-    line-height: 13px;
+    
+}
+.more,.started{
+    display: flex;
+    height: 6vh;
+    width: 18vh;
 
-    @include small-breakpoint {
-        width: $max-width;
-        height: 15vh;
+
+    @include large-breakpoint {
+        height:6vh ;
+        display: flex;;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 47.5%;
+        background-color: blue;
+        color: white;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        line-height: 13px;
     }
 }
 
-.down_foot {display: flex;
-    position: absolute;
-    height: 22%;
-    width: 78%;
+
+.started {
+   
+    background-color: white;
+    color: blue;
+}
+
+.down_foot {
+    display: flex;
+    width: $max-width;
     background: #f4f5f7;
-    margin-top: 47.2%;
+    height: 56vh;
+    margin-top: 794px;
+    margin-left: 4%;
+    flex-direction:column ;
+    position: absolute;
 
-    @include small-breakpoint {
-        width: $max-width;
-        height: 37%;
-        flex-direction: column;
-        margin-top: 794px;
-        margin-left: 23%;
-    }
+
+    @include large-breakpoint {
+        flex-direction: row;
+        display: flex;
+        position: absolute;
+        height: 22%;
+        width: 78%;
+        background: #f4f5f7;
+        margin-top: 47.2%;
+    margin-left: 0%;}
 }
 
-.what_is_it {display: flex;
-    width: 50%;
-    height: 100%;
+.what_is_it {
+    display: flex;
     font-size: 22px;
-    font-weight: 400;
+    $primary-font-weightight;
     line-height: 32px;
+    width: $max-width;
+    height: 50%;
     justify-content: center;
     align-items: center;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
+        display: flex;
+        width: 50%;
+        height: 100%;
         font-size: 22px;
-        font-weight: 400;
+        $primary-font-weightight;
         line-height: 32px;
-        width: $max-width;
-        height: 50%;
         justify-content: center;
         align-items: center;
     }
@@ -474,17 +517,25 @@ ul>li {
 
 .sp_who {
     display: flex;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 32px;
     position: absolute;
     align-self: flex-start;
     justify-self: center;
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
 
-    @include small-breakpoint {
+    @include large-breakpoint {
+        display: flex;
         margin-top: 6px;
         font-size: 22px;
         font-weight: 700;
         line-height: 32px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 32px;
+        position: absolute;
+        align-self: flex-start;
+        justify-self: center;
     }
 }

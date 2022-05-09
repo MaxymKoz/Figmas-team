@@ -10,16 +10,10 @@ $font-size-medium:18px;
 $max-width:100%;
 
 @mixin large-breakpoint {
-    @media screen and (max-width: $breakpoint) {
+    @media screen and (min-width: $breakpoint) {
         @content;
     }
-}
-
-@mixin small-breakpoint {
-    @media screen and (max-width: $breakpoint) {
-        @content;
-    }
-}
+}   
 
 @mixin font ($fontsize, $fontcolor) {
     font-size: $fontsize;  
