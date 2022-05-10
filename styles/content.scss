@@ -1,158 +1,156 @@
 @import "_variables.scss";
 
 .page-content {
-    max-width: 1400px;
-    background-color: #E8E8E8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Work Sans';
+  max-width: 1400px;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Work Sans";
 }
 
 .header-first {
-    display: flex;
-    font-weight: $primary-font-weight;
-    line-height: 34px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 17px;
-    font-size: 22px;
+  display: flex;
+  font-weight: $primary-font-weight;
+  line-height: 34px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 17px;
+  font-size: 22px;
 
-    @include large-breakpoint {
-        margin-top: 108px;
-        margin-bottom: 24px;
-    }
+  @include large-breakpoint {
+    margin-top: 108px;
+    margin-bottom: 24px;
+  }
 }
 
 .header-second {
-    display: flex;
-    font-weight: $primary-font-weight;
-    line-height: 40px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: -0.357143px;
-    font-size: 40px;
+  display: flex;
+  font-weight: $primary-font-weight;
+  line-height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.357143px;
+  font-size: 40px;
 
-    @include block-size(290px, 80px);
+  @include block-size(290px, 80px);
 
-    @include large-breakpoint {
-        font-size: 56px;
-        line-height: 56px;
-        letter-spacing: -0.5px;
-        @include block-size(555px, 112px);
-    }
+  @include large-breakpoint {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    @include block-size(555px, 112px);
+  }
 }
 
 .description_content {
-    display: flex;
-    $primary-font-weightight;
-    line-height: 34px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    font-size: 24px;
-    @include block-size(290px, 136px);
+  display: flex;
+  font-weight: $primary-font-weight;
+  line-height: 34px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-size: 24px;
+  @include block-size(290px, 136px);
 
-    @include large-breakpoint {
-        @include block-size(555px, 72px);
-    }
+  @include large-breakpoint {
+    @include block-size(555px, 72px);
+  }
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-    @include large-breakpoint {
-        flex-direction: row;
-    }
+  @include large-breakpoint {
+    flex-direction: row;
+  }
 }
 
 .page-buttons {
-    border: none;
-    box-shadow: 0px 1px 5px -3px #000000;
-    background-color: #3040C4;
-    font-weight: $primary-font-weight;
-    line-height: 13px;
-    font-size: 18px;
+  border: none;
+  box-shadow: 0px 1px 5px -3px #000000;
+  background-color: #3040c4;
+  font-weight: $primary-font-weight;
+  line-height: 13px;
+  font-size: 18px;
 
-    @include block-size(290px, 48px);
-    
+  @include block-size(290px, 48px);
 
-    &:hover {
-        cursor: pointer;
-        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-            0px 11px 55px rgba(0, 0, 0, 0.07);
-    }
-    
-    @include large-breakpoint {
-        @include block-size(160px, 48px);
-    }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+      0px 11px 55px rgba(0, 0, 0, 0.07);
+  }
+
+  @include large-breakpoint {
+    @include block-size(160px, 48px);
+  }
 }
 
-
 .blue {
-    background-color: $secondary-color;
-    color: $primary-color;
+  background-color: $secondary-color;
+  color: $primary-color;
 }
 
 .white {
-    margin-top: 17px;
-    margin-bottom: 40px;
-    background-color: $primary-color;
+  margin-top: 17px;
+  margin-bottom: 40px;
+  background-color: $primary-color;
 
-    @include large-breakpoint {
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 10px;
-    }
+  @include large-breakpoint {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
 }
 
 .pics {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-weight: $primary-font-weight;
-    line-height: 28px;
-    justify-content: center;
-    font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: $primary-font-weight;
+  line-height: 28px;
+  justify-content: center;
+  font-size: 22px;
 
-    @include large-breakpoint {
-        flex-direction: row;
-        margin-top: 111px;
-        margin-bottom: 110px;
-    }
+  @include large-breakpoint {
+    flex-direction: row;
+    margin-top: 111px;
+    margin-bottom: 110px;
+  }
 }
 
 .pictures {
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    background-color: $primary-color;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    @include block-size(290px, 300px);
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  background-color: $primary-color;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  @include block-size(290px, 300px);
 
-    &:hover {
-        background: #3141C5;
-        color: $primary-color;
-        cursor: pointer;
-        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-            0px 11px 55px rgba(0, 0, 0, 0.07);
-    }
+  &:hover {
+    background: #3141c5;
+    color: $primary-color;
+    cursor: pointer;
+    box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+      0px 11px 55px rgba(0, 0, 0, 0.07);
+  }
 
-    .pic {
-        margin: 22px;
-        @include block-size(138px, 195px);
-    }
+  .pic {
+    margin: 22px;
+    @include block-size(138px, 195px);
+  }
 
-    @include large-breakpoint {
-        margin: 16px;
-        @include block-size(262px, 300px);
-    }
+  @include large-breakpoint {
+    margin: 16px;
+    @include block-size(262px, 300px);
+  }
 }

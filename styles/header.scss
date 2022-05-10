@@ -292,7 +292,7 @@ ul>li {
 .aquam,
 .become-designer {
     display: flex;
-    $primary-font-weightight;
+    font-weight: $primary-font-weight;
     font-size: $font-size-medium;
     line-height: 26px;
     color: black;
@@ -337,7 +337,7 @@ ul>li {
 
 .active {
     display: flex;
-    $primary-font-weightight;
+    font-weight: $primary-font-weight;
     font-size: $font-size-medium;
     line-height: 25px;
 }
@@ -345,7 +345,7 @@ ul>li {
 .menu-tab {
     display: flex;
     color: black;
-    $primary-font-weightight;
+    font-weight: $primary-font-weight;
     font-size: $font-size-medium;
     line-height: 25px;
 }
@@ -413,7 +413,7 @@ ul>li {
         width: 456px;
         position: absolute;
         margin: 302px 802px 230px 0px;
-        $primary-font-weightight;
+        font-weight: $primary-font-weight;
         font-size: 24px;
         line-height: 34px;
     }
@@ -496,7 +496,7 @@ ul>li {
 .what_is_it {
     display: flex;
     font-size: 22px;
-    $primary-font-weightight;
+    font-weight: $primary-font-weight;
     line-height: 32px;
     width: $max-width;
     height: 50%;
@@ -508,7 +508,7 @@ ul>li {
         width: 50%;
         height: 100%;
         font-size: 22px;
-        $primary-font-weightight;
+        font-weight: $primary-font-weight;
         line-height: 32px;
         justify-content: center;
         align-items: center;
