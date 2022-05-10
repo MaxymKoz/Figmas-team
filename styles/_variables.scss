@@ -1,0 +1,32 @@
+$primary-color: #fff;
+$secondary-color: #3040c4;
+$action-button-color: #d5d4d5;
+$primary-text-color: #2b292d;
+$primary-font-weight: 700;
+$secondary-font-weight: 400;
+$button-cursor: pointer;
+$breakpoint: 600px;
+$font-size-medium: 18px;
+$max-width: 100%;
+
+$font-color: #2b292d99;
+$secondary-font-color: rgba(43, 41, 45, 0.6);
+$secondary-font-size: 22px;
+$primary-line-height: 26px;
+$secondary-line-height: 28px;
+
+@mixin large-breakpoint {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin font($fontsize, $fontcolor) {
+  font-size: $fontsize;
+  color: $fontcolor;
+}
+
+@mixin block-size($widthsize, $heightsize) {
+  width: $widthsize;
+  height: $heightsize;
+}

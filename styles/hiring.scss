@@ -1,0 +1,134 @@
+@import '_variables.scss';
+
+.hiring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $primary-color;
+}
+
+.title_hiring {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-weight: $primary-font-weight;
+    text-align: center;
+    color: $primary-text-color;
+    font-size: 40px;
+
+    @include large-breakpoint {
+        font-size: 56px;
+        line-height: 56px;
+    }
+}
+
+.description_hiring {
+    color: $primary-text-color;
+    margin: 18px auto 30px;
+    top: 113px;
+    width: 290px;
+    height: 136px;
+    font-weight: $primary-font-weight;
+    font-size: 24px;
+    text-align: center;
+
+    @include large-breakpoint {
+        width: 555px;
+        max-height: 72px;
+    }
+}
+
+.more-about-company {
+    margin: 0px auto 39px;
+    padding: 0;
+    width: 290px;
+    height: 48px;
+    border-style: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: $primary-font-weight;
+    cursor: $button-cursor;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+    }
+}
+
+.vacancies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 140px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+
+    @include large-breakpoint {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 750px;
+        max-height: 81px;
+    }   
+    &:hover {
+        cursor: $button-cursor;
+        color: $primary-color;
+        background-color: $secondary-color;
+        box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+        0px 11px 55px rgba(0, 0, 0, 0.07);
+    }
+    &_title {
+        max-width: 150px;
+        padding: 19px 71px 18px 20px;
+        font-weight: $primary-font-weight;
+        font-size: 22px;
+        line-height: 28px;
+
+        @include large-breakpoint {
+            display: flex;
+            padding: 0;
+            margin-left: 25px;
+            align-items: center;
+            min-width: 408px;
+        }
+    
+    }
+    &_location {
+        max-width: 180px;
+        padding: 0 50px 19px 20px;
+        font-weight: $primary-font-weight;
+        font-size: 16px;
+        opacity: 0.6;
+
+        @include large-breakpoint {
+            display: flex;
+            align-items: center;
+            min-width: 232px;
+            padding: 0;
+            font-size: 18px;
+            line-height: 28px;
+            margin-left: 20px;
+        }
+    }
+    
+    &_action-button {
+        text-align: center;
+        line-height: 140px;
+        width: 50px;
+        height: 140px;
+        background: $action-button-color;
+        border-radius: 0px 8px 8px 0px;
+
+        @include large-breakpoint {
+            background-color: transparent;
+            height: 81px;
+            line-height: 81px;
+        }
+    }
+}
+// здесь заканчивается Колина часть кода

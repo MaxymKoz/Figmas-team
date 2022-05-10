@@ -1,4 +1,4 @@
-@import "footer-adition.scss";
+@import "_variables.scss";
 
 .footer {
   display: flex;
@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer {
     box-sizing: border-box;
     align-items: center;
@@ -22,20 +22,20 @@
   margin-left: 10px;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-text {
     margin: 20px;
     margin-left: 0;
   }
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .under-label {
     flex-direction: column;
   }
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .under-label {
     display: flex;
     justify-content: space-around;
@@ -50,8 +50,8 @@
   margin: 0;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
   color: $secondary-font-color;
 }
@@ -59,13 +59,13 @@
 .name-logo {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $primary-weight-font;
+  font-weight: $primary-font-weight;
   font-size: $secondary-font-size;
   line-height: $secondary-line-height;
   color: $font-color;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .name-logo {
     margin: 0;
   }
@@ -80,7 +80,7 @@
   padding-bottom: 5vh;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer-column {
     display: block;
     border-bottom: none;
@@ -91,7 +91,7 @@
   list-style: none;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .logo {
     display: flex;
   }
@@ -102,7 +102,7 @@
   align-items: center;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .buttons {
     margin-top: 30px;
     display: flex;
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .under-label-right {
     margin: 0;
   }
@@ -121,8 +121,8 @@
   margin-top: 20px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
   color: $secondary-font-color;
 }
@@ -133,7 +133,7 @@
   }
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .label {
     height: 1px;
     opacity: 10%;
@@ -149,8 +149,8 @@
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
   color: $secondary-font-color;
 }
@@ -161,7 +161,7 @@
   margin-top: 20px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $primary-weight-font;
+  font-weight: $primary-font-weight;
   font-size: $secondary-font-size;
   line-height: $secondary-line-height;
   color: $font-color;
@@ -172,8 +172,8 @@
   color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
   margin-left: 10px;
 }
@@ -183,8 +183,8 @@
   color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
   margin-left: 10px;
 }
@@ -194,8 +194,8 @@
   color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $secondary-weight-font;
-  font-size: $primary-font-size;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
   line-height: $primary-line-height;
 }
 
@@ -203,7 +203,7 @@
   margin-left: 40px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $primary-weight-font;
+  font-weight: $primary-font-weight;
   font-size: $secondary-font-size;
   line-height: $secondary-line-height;
   color: $font-color;
@@ -221,7 +221,7 @@
 }
 
 .under-label-button-facebook-and-linked {
-  width: $primary-font-size;
+  width: $font-size-medium;
   height: 17px;
   margin-left: 10px;
   opacity: 60%;
@@ -233,7 +233,7 @@
   justify-content: flex-start;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-logo {
     display: flex;
     align-items: center;
@@ -248,7 +248,7 @@
   flex-direction: column;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-name-logo {
     display: block;
   }
@@ -259,7 +259,7 @@
   justify-content: center;
 }
 
-@media screen and ($screen-width) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-picture {
     display: block;
   }
