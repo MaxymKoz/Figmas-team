@@ -908,6 +908,7 @@ ul > li {
     margin: 0;
   }
 }
+
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -919,7 +920,6 @@ ul > li {
 
 @media screen and (min-width: 600px) {
   .footer-column {
-    display: block;
     border-bottom: none;
   }
 }
