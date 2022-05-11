@@ -27,7 +27,7 @@
     top: 113px;
     width: 290px;
     height: 136px;
-    $primary-font-weightight;
+   font-weight: $primary-font-weight;
     font-size: 24px;
     text-align: center;
 
@@ -74,14 +74,16 @@
         justify-content: space-between;
         width: 750px;
         max-height: 81px;
-    }   
+    }
+
     &:hover {
         cursor: $button-cursor;
         color: $primary-color;
         background-color: $secondary-color;
         box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
-        0px 11px 55px rgba(0, 0, 0, 0.07);
+            0px 11px 55px rgba(0, 0, 0, 0.07);
     }
+
     &_title {
         max-width: 150px;
         padding: 19px 71px 18px 20px;
@@ -96,12 +98,13 @@
             align-items: center;
             min-width: 408px;
         }
-    
+
     }
+
     &_location {
         max-width: 180px;
         padding: 0 50px 19px 20px;
-        $primary-font-weightight;
+       font-weight: $primary-font-weight;
         font-size: 16px;
         opacity: 0.6;
 
@@ -115,7 +118,7 @@
             margin-left: 20px;
         }
     }
-    
+
     &_action-button {
         text-align: center;
         line-height: 140px;
@@ -131,4 +134,5 @@
         }
     }
 }
+
 // здесь заканчивается Колина часть кода
