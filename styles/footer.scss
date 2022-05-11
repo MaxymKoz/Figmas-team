@@ -1,10 +1,12 @@
+@import "_variables.scss";
+
 .footer {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer {
     box-sizing: border-box;
     align-items: center;
@@ -20,20 +22,20 @@
   margin-left: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-text {
     margin: 20px;
     margin-left: 0;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .under-label {
     flex-direction: column;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .under-label {
     display: flex;
     justify-content: space-around;
@@ -48,22 +50,22 @@
   margin: 0;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
- font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(43, 41, 45, 0.6);
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
+  color: $secondary-font-color;
 }
 
 .name-logo {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  color: #2b292d;
+  font-weight: $primary-font-weight;
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+  color: $font-color;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .name-logo {
     margin: 0;
   }
@@ -78,9 +80,8 @@
   padding-bottom: 5vh;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer-column {
-    display: block;
     border-bottom: none;
   }
 }
@@ -89,7 +90,7 @@
   list-style: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .logo {
     display: flex;
   }
@@ -100,7 +101,7 @@
   align-items: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .buttons {
     margin-top: 30px;
     display: flex;
@@ -109,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .under-label-right {
     margin: 0;
   }
@@ -119,10 +120,10 @@
   margin-top: 20px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(43, 41, 45, 0.6);
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
+  color: $secondary-font-color;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -131,11 +132,11 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .label {
     height: 1px;
     opacity: 10%;
-    background: #2b292d;
+    background: $font-color;
     max-width: 1400px;
     margin: auto;
   }
@@ -147,10 +148,10 @@
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
- font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(43, 41, 45, 0.6);
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
+  color: $secondary-font-color;
 }
 
 .name-product {
@@ -159,52 +160,52 @@
   margin-top: 20px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  color: #2b292d;
+  font-weight: $primary-font-weight;
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+  color: $font-color;
 }
 
 .under-label-button-privacy {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
+  color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
- font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
   margin-left: 10px;
 }
 
 .under-label-button-license {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
+  color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
- font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
   margin-left: 10px;
 }
 
 .under-label-button-terms {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
+  color: $secondary-font-color;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
- font-weight: $primary-font-weight;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: $secondary-font-weight;
+  font-size: $font-size-medium;
+  line-height: $primary-line-height;
 }
 
 .name-company {
   margin-left: 40px;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  color: #2b292d;
+  font-weight: $primary-font-weight;
+  font-size: $secondary-font-size;
+  line-height: $secondary-line-height;
+  color: $font-color;
 }
 
 .under-label {
@@ -219,7 +220,7 @@
 }
 
 .under-label-button-facebook-and-linked {
-  width: 18px;
+  width: $font-size-medium;
   height: 17px;
   margin-left: 10px;
   opacity: 60%;
@@ -228,14 +229,14 @@
 .footer-column-for-logo {
   display: flex;
   flex-direction: column-reverse;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-logo {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row-reverse;
   }
 }
@@ -246,7 +247,7 @@
   flex-direction: column;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-name-logo {
     display: block;
   }
@@ -257,8 +258,10 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $breakpoint) {
   .footer-column-for-picture {
     display: block;
   }
 }
+
+/*# sourceMappingURL=footer-for-addition.scss.map */

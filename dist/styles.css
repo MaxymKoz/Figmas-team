@@ -558,7 +558,7 @@ ul > li {
   margin-bottom: 0px;
   font-weight: 700;
   text-align: center;
-  color: #2B292D;
+  color: #2b292d;
   font-size: 40px;
 }
 @media screen and (min-width: 600px) {
@@ -569,7 +569,7 @@ ul > li {
 }
 
 .description_hiring {
-  color: #2B292D;
+  color: #2b292d;
   margin: 18px auto 30px;
   top: 113px;
   width: 290px;
@@ -602,8 +602,8 @@ ul > li {
 }
 .more-about-company:hover {
   background-color: #fff;
-  color: #3040C4;
-  border: 1px solid #3040C4;
+  color: #3040c4;
+  border: 1px solid #3040c4;
 }
 
 .vacancies {
@@ -627,7 +627,7 @@ ul > li {
 .vacancies:hover {
   cursor: pointer;
   color: #fff;
-  background-color: #3040C4;
+  background-color: #3040c4;
   box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
 }
 .vacancies_title {
@@ -669,7 +669,7 @@ ul > li {
   line-height: 140px;
   width: 50px;
   height: 140px;
-  background: #D5D4D5;
+  background: #d5d4d5;
   border-radius: 0px 8px 8px 0px;
 }
 @media screen and (min-width: 600px) {
@@ -682,7 +682,7 @@ ul > li {
 
 .page-content {
   max-width: 1400px;
-  background-color: #E8E8E8;
+  background-color: #e8e8e8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,7 +762,7 @@ ul > li {
 .page-buttons {
   border: none;
   box-shadow: 0px 1px 5px -3px #000000;
-  background-color: #3040C4;
+  background-color: #3040c4;
   font-weight: 700;
   line-height: 13px;
   font-size: 18px;
@@ -781,7 +781,7 @@ ul > li {
 }
 
 .blue {
-  background-color: #3040C4;
+  background-color: #3040c4;
   color: #fff;
 }
 
@@ -827,7 +827,7 @@ ul > li {
   height: 300px;
 }
 .pictures:hover {
-  background: #3141C5;
+  background: #3141c5;
   color: #fff;
   cursor: pointer;
   box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
@@ -903,7 +903,7 @@ ul > li {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  color: #2b292d;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 @media screen and (min-width: 600px) {
@@ -911,6 +911,7 @@ ul > li {
     margin: 0;
   }
 }
+
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -922,7 +923,6 @@ ul > li {
 
 @media screen and (min-width: 600px) {
   .footer-column {
-    display: block;
     border-bottom: none;
   }
 }
@@ -972,7 +972,7 @@ ul > li {
   .label {
     height: 1px;
     opacity: 10%;
-    background: #2b292d;
+    background: rgba(43, 41, 45, 0.6);
     max-width: 1400px;
     margin: auto;
   }
@@ -998,7 +998,7 @@ ul > li {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  color: #2b292d;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 .under-label-button-privacy {
@@ -1040,7 +1040,7 @@ ul > li {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
-  color: #2b292d;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 .under-label {
@@ -1096,6 +1096,7 @@ ul > li {
     display: block;
   }
 }
+/*# sourceMappingURL=footer-for-addition.scss.map */
 * {
   box-sizing: border-box;
 }
