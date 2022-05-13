@@ -2,70 +2,29 @@
 
 .max_code {
     display: flex;
-    justify-content: center;
     width: 49.5vh;
     height: 1294px;
     background-color: pink;
     flex-direction: column;
 
+
     @include large-breakpoint {
         display: flex;
         width: 100%;
         height: 910px;
-    }
-}
 
-.menu_picture {
-    display: flex;
-    height: 64px;
-    width: 64px;
-
-    @include large-breakpoint {
-        display: flex;
-        height: 60px;
-        width: 60px;
-    }
-}
-
-.menu {
-    display: flex;
-    width: 1143px;
-    height: 100%;
-    margin-left: 0%;
-
-    @include large-breakpoint {
-        display: flex;
-        width: 1400px;
-        height: 100%;
-        margin-left: 7%;
-    }
-}
-
-.nav_menu {
-    display: flex;
-    width: $max-width;
-    height: 64px;
-
-    @include large-breakpoint {
-        display: flex;
-        background-color: white;
-        width: $max-width;
-        height: 7vh;
-        border-radius: 16px;
     }
 }
 
 .startup {
     display: flex;
     width: 30vh;
-    margin-left: 10vh;
-    position: absolute;
     height: 64px;
     flex-direction: column;
 
     @include large-breakpoint {
         display: flex;
-        margin-left: 9.2vh;
+        width: 50vh;
     }
 }
 
@@ -82,9 +41,8 @@
         font-weight: $primary-font-weight;
         width: 222px;
         height: 32px;
-        position: absolute;
         order: 1;
-        align-items: center;
+        align-self: center;
     }
 }
 
@@ -97,28 +55,35 @@
         font-size: $font-size-medium;
         font-weight: $secondary-font-weight;
         height: 45px;
-        margin-top: 16px;
-        align-items: flex-end;
         order: 2;
         visibility: visible;
     }
 }
 
-.one {
+.menu_picture {
     display: flex;
-    position: absolute;
-    width: 2.6vh;
-    height: 3.2vh;
-    margin-left: 19%;
-    margin-top: 7%;
+    height: 64px;
+    width: 64px;
 
     @include large-breakpoint {
         display: flex;
-        width: 2.8vh;
-        height: 7.56vh;
-        margin-left: 37%;
-        margin-top: 0%;
+        height: 60px;
+        width: 60px;
     }
+}
+
+.M-P {
+    display: flex;
+
+    width: 100%;
+    height: 50%;
+
+    @include large-breakpoint {
+justify-content: center;
+        width: 100%;
+        height: 67%;
+    }
+
 }
 
 .main_on_header {
@@ -126,39 +91,112 @@
     display: flex;
     width: $max-width;
     height: 20%;
-    margin-top: 33vh;
-    position: absolute;
     align-self: flex-start;
     justify-self: flex-start;
-    flex-direction: column;
+
 
     @include large-breakpoint {
-        flex-direction: row;
+        align-self: start;
+        justify-self: start;
+        flex-direction: column;
         display: flex;
-        width: 40vh;
-        height: 3vh;
-        margin-top: 5vh;
+        width: 40%;
+        height: 101vh;
+
     }
 }
 
-.btmen {
+.build {
     display: flex;
-    visibility: hidden;
-    margin: 0px;
+    height: 49vh;
+    width: $max-width;
+
+    justify-content: center;
+    font-size: 50px;
+
+    @include large-breakpoint {
+        justify-self: flex-start;
+        align-self: flex-start;
+        display: flex;
+        height: 379px;
+        width: 469px;
+        font-weight: bold;
+        font-size: 63px;
+        line-height: 78px;
+        letter-spacing: -0.5px;
+    }
+}
+
+.creative {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 75%;
 
     @include large-breakpoint {
         display: flex;
-        width: 8%;
-        height: 72%;
-        margin-left: 72.6%;
-        text-align: center;
-        align-items: center;
-        background-color: blue;
-        color: white;
-        font-weight: 700;
-        font-size: $font-size-medium;
-        line-height: 18px;
-        visibility: visible;
+        height: 170px;
+        width: 456px;
+
+        justify-self: flex-start;
+        font-weight: $primary-font-weight;
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+.picture-of-people {
+    display: flex;
+    width: $max-width;
+    height: 25%;
+
+    @include large-breakpoint {
+
+        display: flex;
+        height: 448px;
+        width: 800px;
+        justify-self: flex-end;
+        align-self: center;
+    }
+}
+
+.nav_menu {
+    display: flex;
+    width: $max-width;
+    height: 64px;
+
+    @include large-breakpoint {
+        display: flex;
+        background-color: white;
+        width: $max-width;
+        height: 8vh;
+        border-radius: 16px;
+    }
+}
+
+.menu_picture {
+    display: flex;
+    height: 64px;
+    width: 64px;
+
+    @include large-breakpoint {
+        display: flex;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.one {
+    display: flex;
+    width: 2.6vh;
+    height: 3.2vh;
+
+
+    @include large-breakpoint {
+        display: flex;
+        width: 65.5%;
+        height: 7.56vh;
+
     }
 }
 
@@ -190,7 +228,6 @@ nav {
 
     >li {
         display: flex;
-        float: left;
         position: relative;
         border-left: 1px;
 
@@ -219,7 +256,7 @@ nav {
     }
 
     display: flex;
-    position: absolute;
+
     z-index: 2;
     min-width: 200px;
     background: white;
@@ -230,7 +267,6 @@ nav {
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
     transition: 0.3s linear;
-    left: 100%;
     top: -1px;
     transition: 0.3s linear;
 }
@@ -245,11 +281,10 @@ nav li:hover>.submenu {
 .menu-choose {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+
     background-color: white;
     width: 400px;
     height: 364px;
-    margin: 60px 90px 2px -105px;
     border-radius: 8px;
     align-items: stretch;
 
@@ -258,7 +293,7 @@ nav li:hover>.submenu {
         background-color: white;
         height: 291px;
         width: 550px;
-        margin: 60px 90px 2px -105px;
+
         border-radius: 8px;
         align-items: stretch;
     }
@@ -359,64 +394,24 @@ ul>li {
     line-height: 25px;
 }
 
-.picture {
+.btmen {
     display: flex;
-    position: absolute;
-    width: $max-width;
-    height: 25%;
-    margin-top: 395px;
-    margin-left: 3.5%;
+    visibility: hidden;
+    margin: 0px;
 
     @include large-breakpoint {
         display: flex;
-        position: absolute;
-        height: 448px;
-        width: 645px;
-        margin-top: 8%;
-        margin-left: 32%;
-    }
-}
-
-.build {
-    display: flex;
-    height: 49vh;
-    width: $max-width;
-    margin-top: -47%;
-    margin-left: 7%;
-    justify-content: center;
-    font-size: 50px;
-
-    @include large-breakpoint {
-        margin-top: 18%;
-        margin-left: 0%;
-        display: flex;
-        position: absolute;
-        height: 379px;
-        width: 469px;
-        font-weight: bold;
-        font-size: 63px;
-        line-height: 78px;
-        letter-spacing: -0.5px;
-    }
-}
-
-.creative {
-    display: flex;
-    margin-top: 6%;
-    margin-left: 7vh;
-    flex-direction: column;
-    height: 45vh;
-    width: 75%;
-
-    @include large-breakpoint {
-        display: flex;
-        height: 102px;
-        width: 456px;
-        position: absolute;
-        margin: 302px 802px 230px 0px;
-        font-weight: $primary-font-weight;
-        font-size: 24px;
-        line-height: 34px;
+        width: 8%;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-self: flex-end;
+        background-color: blue;
+        color: white;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        line-height: 18px;
+        visibility: visible;
     }
 }
 
@@ -425,37 +420,50 @@ ul>li {
     flex-direction: column;
     width: $max-width;
     height: 19vh;
-    margin-top: 150%;
-    margin-right: 31%;
 
     @include large-breakpoint {
         display: flex;
         flex-direction: row;
         height: 48px;
-        width: 328px;
-        position: absolute;
-        margin: 490px 940px 126px 0px;
-
+        width: 458px;
+        padding-top: 22px;
+        align-self: flex-end;
+        justify-self: flex-start;
     }
 }
 
+
+
 .more {
-    background-color: blue;
-    color: white;
-
-}
-
-.more,
-.started {
     display: flex;
     height: 6vh;
-    width: 18vh;
+    width: 10vh;
 
 
     @include large-breakpoint {
         height: 6vh;
         display: flex;
-        ;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 47.5%;
+        background-color: white;
+        color: blue;
+        font-weight: 700;
+        font-size: $font-size-medium;
+        line-height: 13px;
+    }
+}
+
+.started {
+    display: flex;
+    height: 6vh;
+    width: 10vh;
+
+
+    @include large-breakpoint {
+        height: 6vh;
+        display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -468,37 +476,27 @@ ul>li {
     }
 }
 
-
-.started {
-
-    background-color: white;
-    color: blue;
-}
-
 .down_foot {
     display: flex;
     width: $max-width;
-    background: #f4f5f7;
     height: 56vh;
-    margin-top: 794px;
-    margin-left: 4%;
     flex-direction: column;
-    position: absolute;
+
 
 
     @include large-breakpoint {
+        display: flex;
         flex-direction: row;
         display: flex;
-        position: absolute;
-        height: 22%;
-        width: 78%;
-        background: #f4f5f7;
-        margin-top: 40.2%;
-        margin-left: -5%;
+        height: 17%;
+        width: 100%;
+        justify-content: center;
+        
     }
 }
 
 .what_is_it {
+    background: #f4f5f7;
     display: flex;
     font-size: 22px;
     font-weight: $primary-font-weight;
@@ -508,39 +506,38 @@ ul>li {
     justify-content: center;
     align-items: center;
 
+
     @include large-breakpoint {
         display: flex;
-        width: 50%;
+        width: 42%;
         height: 100%;
         font-size: 22px;
         font-weight: $primary-font-weight;
         line-height: 32px;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 }
 
 .sp_who {
     display: flex;
-    position: absolute;
     align-self: flex-start;
     justify-self: center;
-    margin-top: 6px;
     font-size: 22px;
     font-weight: 700;
     line-height: 32px;
 
     @include large-breakpoint {
-        display: flex;
-        margin-top: 6px;
+        display: flex; 
         font-size: 22px;
         font-weight: 700;
         line-height: 32px;
         font-size: 22px;
         font-weight: 700;
         line-height: 32px;
-        position: absolute;
         align-self: flex-start;
         justify-self: center;
+        width: 100%;
     }
 }
