@@ -2,7 +2,7 @@
 .max_code {
   display: flex;
   width: 49.5vh;
-  height: 1294px;
+  height: 920px;
   background-color: pink;
   flex-direction: column;
 }
@@ -16,7 +16,7 @@
 
 .startup {
   display: flex;
-  width: 30vh;
+  width: 4vh;
   height: 64px;
   flex-direction: column;
 }
@@ -47,8 +47,7 @@
 }
 
 .text-menu2 {
-  visibility: hidden;
-  display: flex;
+  display: none;
 }
 @media screen and (min-width: 600px) {
   .text-menu2 {
@@ -61,26 +60,15 @@
   }
 }
 
-.menu_picture {
-  display: flex;
-  height: 64px;
-  width: 64px;
-}
-@media screen and (min-width: 600px) {
-  .menu_picture {
-    display: flex;
-    height: 60px;
-    width: 60px;
-  }
-}
-
 .M-P {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: 75%;
 }
 @media screen and (min-width: 600px) {
   .M-P {
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 67%;
@@ -92,8 +80,11 @@
   display: flex;
   width: 100%;
   height: 20%;
+  flex-direction: column;
   align-self: flex-start;
   justify-self: flex-start;
+  flex: 1;
+  padding: 30px;
 }
 @media screen and (min-width: 600px) {
   .main_on_header {
@@ -108,7 +99,7 @@
 
 .build {
   display: flex;
-  height: 49vh;
+  height: 22vh;
   width: 100%;
   justify-content: center;
   font-size: 50px;
@@ -130,8 +121,8 @@
 .creative {
   display: flex;
   flex-direction: column;
-  height: 45vh;
-  width: 75%;
+  height: 20vh;
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
   .creative {
@@ -148,7 +139,7 @@
 .picture-of-people {
   display: flex;
   width: 100%;
-  height: 25%;
+  height: 36%;
 }
 @media screen and (min-width: 600px) {
   .picture-of-people {
@@ -158,6 +149,11 @@
     justify-self: flex-end;
     align-self: center;
   }
+}
+
+.pic_ouch {
+  width: 100%;
+  height: 100%;
 }
 
 .nav_menu {
@@ -192,6 +188,7 @@
   display: flex;
   width: 2.6vh;
   height: 3.2vh;
+  padding-top: 17px;
 }
 @media screen and (min-width: 600px) {
   .one {
@@ -242,7 +239,9 @@ nav a {
 }
 
 .submenu {
+  float: left;
   display: flex;
+  display: none;
   z-index: 2;
   min-width: 200px;
   background: white;
@@ -261,11 +260,17 @@ nav a {
   color: black;
 }
 
+.submenu::after:active {
+  display: block;
+  float: left;
+}
+
 nav li:hover > .submenu {
   display: flex;
   transform: rotateX(0deg);
   visibility: visible;
   opacity: 1;
+  float: left;
 }
 
 .menu-choose {
@@ -384,8 +389,7 @@ ul > li {
 }
 
 .btmen {
-  display: flex;
-  visibility: hidden;
+  display: none;
   margin: 0px;
 }
 @media screen and (min-width: 600px) {
@@ -409,7 +413,9 @@ ul > li {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 19vh;
+  height: 14vh;
+  align-self: center;
+  padding: 10px;
 }
 @media screen and (min-width: 600px) {
   .reserved {
@@ -420,13 +426,19 @@ ul > li {
     padding-top: 22px;
     align-self: flex-end;
     justify-self: flex-start;
+    padding: 0px;
   }
 }
 
 .more {
   display: flex;
   height: 6vh;
-  width: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: white;
+  color: blue;
 }
 @media screen and (min-width: 600px) {
   .more {
@@ -436,18 +448,21 @@ ul > li {
     text-align: center;
     justify-content: center;
     width: 47.5%;
-    background-color: white;
-    color: blue;
     font-weight: 700;
     font-size: 18px;
     line-height: 13px;
+    margin-top: 0px;
   }
 }
 
 .started {
   display: flex;
   height: 6vh;
-  width: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
 }
 @media screen and (min-width: 600px) {
   .started {
@@ -457,8 +472,6 @@ ul > li {
     text-align: center;
     justify-content: center;
     width: 47.5%;
-    background-color: blue;
-    color: white;
     font-weight: 700;
     font-size: 18px;
     line-height: 13px;
@@ -468,7 +481,7 @@ ul > li {
 .down_foot {
   display: flex;
   width: 100%;
-  height: 56vh;
+  height: 29vh;
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
